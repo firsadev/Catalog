@@ -314,6 +314,18 @@ body{
 }
 .pdf-footer strong{color:var(--accent-gold);}
 
+.pdf-grid-2{
+    display:grid;grid-template-columns:1fr 1fr;gap:14px;
+}
+.pdf-grid-music{
+    display:grid;grid-template-columns:1.1fr 0.9fr;gap:14px;
+    background:rgba(18,22,32,0.88);border:1px solid rgba(241,196,15,0.3);
+    border-radius:10px;padding:18px;
+}
+.pdf-music-imgs{
+    display:flex;flex-direction:column;gap:9px;
+}
+
 /* ===== FOOTER ===== */
 footer{
     background:rgba(9,11,16,0.96);border-top:1px solid var(--border-glass);
@@ -442,14 +454,122 @@ footer{
         padding: 6px 12px;
         font-size: 11px;
     }
+    /* PDF View Responsive on Mobile Screen */
     .pdf-catalog-wrap {
-        padding: 15px 4px 40px;
-        overflow-x: auto;
-        -webkit-overflow-scrolling: touch;
+        padding: 16px 12px 60px !important;
+        gap: 20px !important;
+        width: 100% !important;
+        box-sizing: border-box !important;
+        overflow-x: hidden !important;
     }
     .printable-page {
-        max-width: 100%;
-        box-shadow: 0 6px 20px rgba(0,0,0,0.7);
+        width: 100% !important;
+        max-width: 100% !important;
+        height: auto !important;
+        min-height: auto !important;
+        border-radius: 16px !important;
+        box-shadow: 0 8px 30px rgba(0,0,0,0.7), 0 0 1px rgba(241,196,15,0.3) !important;
+        overflow: hidden !important;
+        margin: 0 !important;
+        page-break-after: unset !important;
+        break-after: unset !important;
+    }
+    .page-inner {
+        padding: 22px 18px !important;
+        height: auto !important;
+        min-height: auto !important;
+        gap: 18px !important;
+    }
+    .printable-page .pdf-hdr {
+        margin-bottom: 12px !important;
+        padding-bottom: 8px !important;
+    }
+    .printable-page .pdf-hdr h2 {
+        font-size: 11px !important;
+        letter-spacing: 1px !important;
+    }
+    .printable-page .pdf-sec-title {
+        font-size: 16px !important;
+        margin-bottom: 12px !important;
+        padding-left: 9px !important;
+        border-left-width: 4px !important;
+    }
+    .printable-page .pdf-card {
+        padding: 14px !important;
+        margin-bottom: 12px !important;
+    }
+    .printable-page .pdf-img {
+        height: 190px !important;
+        margin-bottom: 10px !important;
+    }
+    .printable-page .pdf-card-title {
+        font-size: 15px !important;
+    }
+    .printable-page .pdf-price-tag {
+        font-size: 13px !important;
+        padding: 3px 9px !important;
+    }
+    .printable-page .pdf-specs li {
+        font-size: 11px !important;
+        gap: 6px !important;
+    }
+    .printable-page .pdf-footer {
+        flex-direction: column !important;
+        align-items: flex-start !important;
+        gap: 5px !important;
+        padding-top: 10px !important;
+        font-size: 10.5px !important;
+        line-height: 1.5 !important;
+    }
+    /* Multi-column layouts inside PDF pages collapse to clean single column on mobile */
+    .printable-page div[style*="display:grid"],
+    .pdf-grid-2,
+    .pdf-grid-music {
+        display: grid !important;
+        grid-template-columns: 1fr !important;
+        gap: 14px !important;
+    }
+    .pdf-music-imgs {
+        display: grid !important;
+        grid-template-columns: repeat(3, 1fr) !important;
+        gap: 8px !important;
+    }
+    .pdf-music-imgs .pdf-img {
+        height: 105px !important;
+        margin-bottom: 0 !important;
+    }
+    /* Cover Page responsive scaling */
+    .printable-page div[style*="font-size:62px"] {
+        font-size: clamp(32px, 8.5vw, 44px) !important;
+        letter-spacing: 3px !important;
+        margin-bottom: 8px !important;
+    }
+    .printable-page div[style*="font-size:32px"],
+    .printable-page div[style*="font-size:36px"],
+    .printable-page div[style*="font-size:34px"] {
+        font-size: clamp(22px, 6vw, 28px) !important;
+    }
+    .printable-page div[style*="font-size:17px"],
+    .printable-page div[style*="font-size:18px"] {
+        font-size: 12.5px !important;
+        letter-spacing: 2px !important;
+    }
+    .printable-page div[style*="font-size:20px"] {
+        font-size: 15px !important;
+    }
+    .printable-page div[style*="border-top:2px solid"] {
+        flex-direction: column !important;
+        align-items: flex-start !important;
+        gap: 12px !important;
+        text-align: left !important;
+    }
+    .printable-page div[style*="border-top:2px solid"] > div {
+        text-align: left !important;
+        max-width: 100% !important;
+    }
+    .printable-page div[style*="padding:32px 20px"] {
+        padding: 22px 14px !important;
+        margin: 14px 0 !important;
     }
 }
 
@@ -503,6 +623,26 @@ footer{
         grid-template-columns: 1fr;
         gap: 20px;
     }
+    /* PDF View on Small Phones */
+    .pdf-catalog-wrap {
+        padding: 12px 8px 50px !important;
+        gap: 16px !important;
+    }
+    .page-inner {
+        padding: 16px 12px !important;
+    }
+    .printable-page .pdf-img {
+        height: 170px !important;
+    }
+    .printable-page .pdf-card {
+        padding: 12px !important;
+    }
+    .printable-page .pdf-card-title {
+        font-size: 14px !important;
+    }
+    .printable-page .pdf-specs li {
+        font-size: 10.5px !important;
+    }
 }
 
 /* ===== PRINT ===== */
@@ -511,12 +651,38 @@ footer{
     body{background:none !important;}
     .navbar,.hero,#web-view,footer,.toast{display:none !important;}
     #pdf-view{display:block !important;}
-    .pdf-catalog-wrap{padding:0 !important;gap:0 !important;}
+    .pdf-catalog-wrap{padding:0 !important;gap:0 !important;display:block !important;overflow:visible !important;}
     .printable-page{
         margin:0 !important;box-shadow:none !important;border:none !important;
         border-radius:0 !important;page-break-after:always !important;
         break-after:page !important;width:210mm !important;height:297mm !important;
+        max-width:210mm !important;min-height:297mm !important;
         -webkit-print-color-adjust:exact !important;print-color-adjust:exact !important;
+    }
+    .page-inner{
+        padding:18mm 17mm !important;height:100% !important;
+        display:flex !important;flex-direction:column !important;
+        justify-content:space-between !important;
+    }
+    .printable-page div[style*="display:grid"],
+    .pdf-grid-2 {
+        display: grid !important;
+        grid-template-columns: 1fr 1fr !important;
+        gap: 14px !important;
+    }
+    .pdf-grid-music {
+        display: grid !important;
+        grid-template-columns: 1.1fr 0.9fr !important;
+        gap: 14px !important;
+    }
+    .pdf-music-imgs {
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 9px !important;
+    }
+    .printable-page .pdf-footer {
+        flex-direction: row !important;
+        align-items: center !important;
     }
 }
 </style>
@@ -714,7 +880,7 @@ footer{
             <div>
                 <div class="pdf-hdr"><h2>Ika / Ira Sound System Production</h2></div>
                 <div class="pdf-sec-title">Aneka Tenda & Kursi Event</div>
-                <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;">
+                <div class="pdf-grid-2">
                     <div class="pdf-card">
                         <div class="pdf-img" style="height:240px;"><img src="https://images.unsplash.com/photo-1530103862676-de8c9debad1d?auto=format&fit=crop&w=800&q=80" alt="Tenda Sarnafil"></div>
                         <div class="pdf-card-title">Tenda Sarnafil Kerucut</div>
@@ -742,7 +908,7 @@ footer{
             <div>
                 <div class="pdf-hdr"><h2>Ika / Ira Sound System Production</h2></div>
                 <div class="pdf-sec-title">Alat Musik & Backline Stage</div>
-                <div style="display:grid;grid-template-columns:1.1fr 0.9fr;gap:14px;background:rgba(18,22,32,0.88);border:1px solid rgba(241,196,15,0.3);border-radius:10px;padding:18px;">
+                <div class="pdf-grid-music">
                     <div style="font-size:12.5px;line-height:1.8;color:#fff;">
                         <div style="margin-bottom:8px;"><strong style="color:var(--accent-gold);">GUITAR YAMAHA PACIFICA:</strong><br><span style="font-weight:800;">Rp 300.000</span> (Softcase & Cable)</div>
                         <div style="margin-bottom:8px;"><strong style="color:var(--accent-gold);">BASS YAMAHA BB234:</strong><br><span style="font-weight:800;">Rp 300.000</span> (Strap & Cable)</div>
@@ -757,7 +923,7 @@ footer{
                             </ul>
                         </div>
                     </div>
-                    <div style="display:flex;flex-direction:column;gap:9px;">
+                    <div class="pdf-music-imgs">
                         <div class="pdf-img" style="height:135px;margin-bottom:0;"><img src="https://images.unsplash.com/photo-1564186763535-ebb21ef5277f?auto=format&fit=crop&w=600&q=80" alt="Guitar"></div>
                         <div class="pdf-img" style="height:135px;margin-bottom:0;"><img src="https://images.unsplash.com/photo-1462965326201-d02e4f455804?auto=format&fit=crop&w=600&q=80" alt="Keyboard"></div>
                         <div class="pdf-img" style="height:145px;margin-bottom:0;"><img src="https://images.unsplash.com/photo-1519892300165-cb5542fb47c7?auto=format&fit=crop&w=600&q=80" alt="Drum"></div>
@@ -797,7 +963,7 @@ footer{
             <div>
                 <div class="pdf-hdr"><h2>Ika / Ira Sound System Production</h2></div>
                 <div class="pdf-sec-title">Paket Lighting Panggung</div>
-                <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;">
+                <div class="pdf-grid-2">
                     <div class="pdf-card">
                         <div class="pdf-img" style="height:245px;"><img src="https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?auto=format&fit=crop&w=800&q=80" alt="Lighting A"></div>
                         <div class="pdf-card-title">Paket Stage Lighting A</div>
@@ -823,7 +989,7 @@ footer{
             <div>
                 <div class="pdf-hdr"><h2>Ika / Ira Sound System Production</h2></div>
                 <div class="pdf-sec-title">Sound System Standard Capacity</div>
-                <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;">
+                <div class="pdf-grid-2">
                     <div class="pdf-card">
                         <div class="pdf-img" style="height:245px;"><img src="https://images.unsplash.com/photo-1545128485-c400e7702796?auto=format&fit=crop&w=800&q=80" alt="Sound 2000W"></div>
                         <div class="pdf-card-title">Paket Sound 2.000 Watt</div>
