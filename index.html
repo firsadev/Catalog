@@ -3,939 +3,926 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Katalog PDF - Ika / Ira Sound System Production</title>
-    <meta name="description" content="Katalog Resmi Sewa Sound System, Panggung Rigging, Lighting Stage, Videotron LED P3.1, Tenda Sarnafil & Alat Musik - Ika / Ira Sound System Production Bogor">
-    
-    <!-- Google Fonts -->
+    <title>Ika / Ira Sound System Production - Katalog Lengkap</title>
+    <meta name="description" content="Katalog Sewa Sound System, Panggung Rigging, Lighting Stage, Videotron LED P3.1, Tenda Sarnafil & Alat Musik - Ika / Ira Sound System Production Bogor">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    
-    <!-- FontAwesome Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
-    <style>
-        :root {
-            --bg-dark: #06080d;
-            --bg-card: rgba(18, 22, 32, 0.88);
-            --accent-gold: #f1c40f;
-            --accent-gold-dark: #d4ac0d;
-            --accent-gold-glow: rgba(241, 196, 15, 0.35);
-            --text-main: #f8fafc;
-            --text-muted: #94a3b8;
-            --border-gold: rgba(241, 196, 15, 0.35);
-            --border-glass: rgba(255, 255, 255, 0.1);
-        }
+<style>
+/* ===== DESIGN SYSTEM ===== */
+:root {
+    --bg-main: #090b10;
+    --bg-card: rgba(20, 25, 38, 0.82);
+    --bg-card-hover: rgba(28, 35, 52, 0.95);
+    --accent-gold: #f1c40f;
+    --accent-gold-dark: #d4ac0d;
+    --accent-gold-glow: rgba(241,196,15,0.3);
+    --accent-cyan: #00d4ff;
+    --text-main: #f0f4ff;
+    --text-muted: #8899b8;
+    --border-gold: rgba(241,196,15,0.3);
+    --border-glass: rgba(255,255,255,0.08);
+    --radius-xl: 20px;
+    --radius-lg: 14px;
+    --radius-md: 10px;
+    --shadow-gold: 0 0 25px rgba(241,196,15,0.15);
+}
 
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{
+    font-family:'Plus Jakarta Sans',sans-serif;
+    background-color:var(--bg-main);
+    color:var(--text-main);
+    line-height:1.6;
+    overflow-x:hidden;
+    background-image:
+        radial-gradient(circle at 10% 20%, rgba(241,196,15,0.05) 0%, transparent 45%),
+        radial-gradient(circle at 90% 70%, rgba(0,212,255,0.04) 0%, transparent 45%);
+    background-attachment:fixed;
+    -webkit-print-color-adjust:exact;
+    print-color-adjust:exact;
+}
 
-        body {
-            font-family: 'Plus Jakarta Sans', sans-serif;
-            background-color: #0b0d14;
-            color: var(--text-main);
-            line-height: 1.5;
-            -webkit-print-color-adjust: exact;
-            print-color-adjust: exact;
-        }
+::-webkit-scrollbar{width:6px;}
+::-webkit-scrollbar-track{background:#060810;}
+::-webkit-scrollbar-thumb{background:var(--accent-gold);border-radius:3px;}
 
-        /* Top Bar Navigation for Screen Viewing */
-        .top-toolbar {
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-            background: rgba(7, 9, 14, 0.92);
-            backdrop-filter: blur(16px);
-            -webkit-backdrop-filter: blur(16px);
-            border-bottom: 1px solid var(--border-gold);
-            padding: 12px 28px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.5);
-        }
+/* ===== NAVBAR ===== */
+.navbar{
+    position:sticky;top:0;z-index:1000;
+    background:rgba(9,11,16,0.92);
+    backdrop-filter:blur(20px);
+    -webkit-backdrop-filter:blur(20px);
+    border-bottom:1px solid var(--border-gold);
+    padding:12px 28px;
+    display:flex;justify-content:space-between;align-items:center;
+    box-shadow:0 4px 30px rgba(0,0,0,0.5);
+}
 
-        .toolbar-brand {
-            display: flex;
-            align-items: center;
-            gap: 12px;
-            text-decoration: none;
-            color: #fff;
-        }
+.nav-brand{display:flex;align-items:center;gap:12px;text-decoration:none;}
+.brand-icon{
+    width:44px;height:44px;
+    background:linear-gradient(135deg,var(--accent-gold),#e67e22);
+    border-radius:12px;display:flex;align-items:center;justify-content:center;
+    color:#000;font-size:20px;
+    box-shadow:0 4px 16px var(--accent-gold-glow);
+    transition:transform 0.3s;
+}
+.nav-brand:hover .brand-icon{transform:rotate(-8deg) scale(1.05);}
+.brand-name{font-family:'Montserrat',sans-serif;font-weight:900;font-size:16px;color:#fff;letter-spacing:0.5px;}
+.brand-sub{font-size:10px;color:var(--accent-gold);text-transform:uppercase;letter-spacing:2px;font-weight:700;}
 
-        .brand-icon {
-            width: 42px;
-            height: 42px;
-            background: linear-gradient(135deg, var(--accent-gold), #d35400);
-            border-radius: 10px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: #000;
-            font-size: 20px;
-            box-shadow: 0 0 15px var(--accent-gold-glow);
-        }
+/* Mode Switcher */
+.mode-switcher{
+    display:flex;background:rgba(255,255,255,0.05);
+    padding:4px;border-radius:10px;border:1px solid var(--border-glass);
+}
+.mode-btn{
+    padding:8px 18px;border-radius:8px;font-size:12px;font-weight:700;
+    background:transparent;color:var(--text-muted);border:none;cursor:pointer;
+    transition:all 0.25s;display:flex;align-items:center;gap:7px;
+    font-family:'Plus Jakarta Sans',sans-serif;
+}
+.mode-btn.active{background:var(--accent-gold);color:#000;}
+.mode-btn:hover:not(.active){color:#fff;background:rgba(255,255,255,0.08);}
 
-        .brand-title {
-            font-family: 'Montserrat', sans-serif;
-            font-weight: 900;
-            font-size: 16px;
-            letter-spacing: 1px;
-            color: #fff;
-        }
+.nav-right{display:flex;align-items:center;gap:10px;}
 
-        .brand-subtitle {
-            font-size: 11px;
-            color: var(--accent-gold);
-            text-transform: uppercase;
-            letter-spacing: 1.5px;
-            font-weight: 700;
-        }
+/* ===== BUTTONS ===== */
+.btn{
+    display:inline-flex;align-items:center;gap:7px;
+    padding:10px 18px;border-radius:var(--radius-md);
+    font-weight:700;font-size:13px;cursor:pointer;
+    transition:all 0.25s ease;text-decoration:none;border:none;
+    font-family:'Plus Jakarta Sans',sans-serif;
+}
+.btn-gold{
+    background:linear-gradient(135deg,var(--accent-gold),var(--accent-gold-dark));
+    color:#000;box-shadow:0 4px 16px var(--accent-gold-glow);
+}
+.btn-gold:hover{transform:translateY(-2px);box-shadow:0 6px 22px rgba(241,196,15,0.45);}
+.btn-wa{background:#25D366;color:#fff;box-shadow:0 4px 16px rgba(37,211,102,0.3);}
+.btn-wa:hover{background:#1da851;transform:translateY(-2px);box-shadow:0 6px 20px rgba(37,211,102,0.4);}
+.btn-outline{
+    background:rgba(255,255,255,0.05);
+    border:1px solid var(--border-gold);color:var(--accent-gold);
+}
+.btn-outline:hover{background:rgba(241,196,15,0.12);color:#fff;border-color:var(--accent-gold);}
+.btn-sm{padding:8px 14px;font-size:12px;}
 
-        .toolbar-actions {
-            display: flex;
-            align-items: center;
-            gap: 12px;
-        }
+/* ===== HERO ===== */
+.hero{
+    position:relative;padding:64px 24px 48px;
+    max-width:1320px;margin:0 auto;text-align:center;
+}
+.hero-badge{
+    display:inline-flex;align-items:center;gap:8px;
+    padding:6px 18px;background:rgba(241,196,15,0.1);
+    border:1px solid var(--border-gold);border-radius:30px;
+    color:var(--accent-gold);font-size:11px;font-weight:800;
+    letter-spacing:1.5px;text-transform:uppercase;margin-bottom:22px;
+}
+.hero-title{
+    font-family:'Montserrat',sans-serif;
+    font-size:clamp(30px,5vw,58px);font-weight:900;
+    text-transform:uppercase;letter-spacing:-1px;line-height:1.05;
+    margin-bottom:18px;
+    background:linear-gradient(180deg,#fff 0%,#d0d8f0 55%,var(--accent-gold) 100%);
+    -webkit-background-clip:text;-webkit-text-fill-color:transparent;
+}
+.hero-desc{
+    max-width:720px;margin:0 auto 32px;
+    font-size:15px;color:var(--text-muted);line-height:1.8;
+}
+.hero-stats{
+    display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+    gap:14px;max-width:900px;margin:0 auto 48px;
+}
+.stat-card{
+    background:var(--bg-card);border:1px solid var(--border-glass);
+    padding:16px;border-radius:var(--radius-md);text-align:center;
+    backdrop-filter:blur(10px);
+}
+.stat-val{font-family:'Montserrat',sans-serif;font-size:22px;font-weight:900;color:var(--accent-gold);}
+.stat-lbl{font-size:10px;color:var(--text-muted);text-transform:uppercase;letter-spacing:0.5px;margin-top:4px;}
 
-        .btn {
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-            padding: 10px 18px;
-            border-radius: 8px;
-            font-weight: 700;
-            font-size: 13px;
-            cursor: pointer;
-            transition: all 0.25s ease;
-            text-decoration: none;
-            border: none;
-        }
+/* ===== WEBSITE VIEW ===== */
+#web-view{display:block;}
 
-        .btn-gold {
-            background: linear-gradient(135deg, var(--accent-gold), var(--accent-gold-dark));
-            color: #000;
-            box-shadow: 0 4px 15px var(--accent-gold-glow);
-        }
+.app-container{max-width:1320px;margin:0 auto;padding:0 24px 80px;}
 
-        .btn-gold:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 6px 20px rgba(241, 196, 15, 0.5);
-        }
+/* Controls */
+.controls{
+    background:var(--bg-card);border:1px solid var(--border-glass);
+    border-radius:var(--radius-lg);padding:20px;margin-bottom:28px;
+    backdrop-filter:blur(12px);box-shadow:var(--shadow-gold);
+}
+.search-wrap{position:relative;margin-bottom:16px;}
+.search-wrap i{position:absolute;left:16px;top:50%;transform:translateY(-50%);color:var(--accent-gold);}
+.search-input{
+    width:100%;padding:13px 16px 13px 46px;
+    background:rgba(9,11,16,0.7);border:1px solid var(--border-gold);
+    border-radius:var(--radius-md);color:#fff;font-size:14px;outline:none;
+    transition:all 0.3s;font-family:'Plus Jakarta Sans',sans-serif;
+}
+.search-input:focus{border-color:var(--accent-gold);box-shadow:0 0 15px var(--accent-gold-glow);}
+.search-input::placeholder{color:var(--text-muted);}
 
-        .btn-wa {
-            background: #25D366;
-            color: #fff;
-            box-shadow: 0 4px 15px rgba(37, 211, 102, 0.3);
-        }
+.filter-pills{display:flex;flex-wrap:wrap;gap:8px;}
+.pill{
+    padding:7px 16px;border-radius:30px;
+    background:rgba(255,255,255,0.04);border:1px solid var(--border-glass);
+    color:var(--text-muted);font-size:12px;font-weight:700;cursor:pointer;
+    transition:all 0.2s;display:flex;align-items:center;gap:6px;
+    font-family:'Plus Jakarta Sans',sans-serif;
+}
+.pill:hover{border-color:var(--accent-gold);color:#fff;}
+.pill.active{background:var(--accent-gold);color:#000;border-color:var(--accent-gold);box-shadow:0 4px 14px var(--accent-gold-glow);}
 
-        .btn-wa:hover {
-            background: #20ba5a;
-            transform: translateY(-2px);
-        }
+/* Cards Grid */
+.catalog-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fill,minmax(310px,1fr));
+    gap:22px;
+}
+.catalog-card{
+    background:var(--bg-card);border:1px solid var(--border-glass);
+    border-radius:var(--radius-xl);overflow:hidden;
+    display:flex;flex-direction:column;
+    transition:all 0.35s cubic-bezier(0.4,0,0.2,1);
+    position:relative;backdrop-filter:blur(14px);
+}
+.catalog-card:hover{
+    transform:translateY(-7px);
+    border-color:var(--accent-gold);
+    box-shadow:0 16px 40px rgba(0,0,0,0.6),0 0 24px var(--accent-gold-glow);
+    background:var(--bg-card-hover);
+}
+.card-thumb{position:relative;height:205px;overflow:hidden;background:#0d1020;}
+.card-thumb img{width:100%;height:100%;object-fit:cover;transition:transform 0.6s ease;}
+.catalog-card:hover .card-thumb img{transform:scale(1.09);}
+.cat-badge{
+    position:absolute;top:12px;left:12px;
+    background:rgba(9,11,16,0.88);backdrop-filter:blur(8px);
+    border:1px solid var(--accent-gold-glow);color:var(--accent-gold);
+    font-size:10px;font-weight:800;padding:4px 10px;
+    border-radius:20px;text-transform:uppercase;letter-spacing:0.5px;
+}
+.card-body{padding:20px;display:flex;flex-direction:column;flex-grow:1;}
+.card-title{
+    font-family:'Montserrat',sans-serif;font-size:17px;font-weight:800;
+    color:#fff;margin-bottom:8px;
+}
+.card-price{
+    font-family:'Montserrat',sans-serif;font-size:15px;font-weight:900;
+    color:var(--accent-gold);margin-bottom:14px;
+    display:inline-flex;align-items:center;gap:5px;
+}
+.card-specs{list-style:none;margin-bottom:18px;flex-grow:1;}
+.card-specs li{
+    font-size:12px;color:var(--text-muted);margin-bottom:6px;
+    display:flex;align-items:flex-start;gap:8px;line-height:1.4;
+}
+.card-specs li i{color:var(--accent-gold);font-size:11px;margin-top:3px;flex-shrink:0;}
+.card-actions{display:flex;gap:8px;margin-top:auto;}
+.card-actions .btn{flex:1;justify-content:center;font-size:12px;padding:10px 8px;}
 
-        .badge-pages {
-            background: rgba(241, 196, 15, 0.15);
-            border: 1px solid var(--border-gold);
-            color: var(--accent-gold);
-            padding: 6px 14px;
-            border-radius: 20px;
-            font-size: 12px;
-            font-weight: 700;
-            display: flex;
-            align-items: center;
-            gap: 6px;
-        }
+/* Empty State */
+.empty-state{
+    grid-column:1/-1;text-align:center;
+    padding:70px 20px;color:var(--text-muted);
+}
+.empty-state i{font-size:52px;color:var(--accent-gold);margin-bottom:16px;display:block;}
 
-        /* Catalog Screen Preview Container */
-        .pdf-catalog-wrapper {
-            padding: 30px 15px 60px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 30px;
-        }
+/* ===== PDF VIEW ===== */
+#pdf-view{display:none;}
 
-        /* Printable A4 Page Container */
-        .printable-page {
-            width: 210mm;
-            height: 297mm;
-            background: #06080d;
-            color: #fff;
-            position: relative;
-            overflow: hidden;
-            box-shadow: 0 12px 40px rgba(0, 0, 0, 0.8), 0 0 1px rgba(241, 196, 15, 0.4);
-            border: 1px solid rgba(241, 196, 15, 0.3);
-            border-radius: 4px;
-            page-break-after: always;
-            break-after: page;
-        }
+.pdf-catalog-wrap{
+    padding:30px 15px 60px;
+    display:flex;flex-direction:column;
+    align-items:center;gap:28px;
+}
 
-        .page-stage-bg {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-size: cover;
-            background-position: center;
-            opacity: 0.18;
-            z-index: 1;
-            filter: blur(2px);
-        }
+.printable-page{
+    width:210mm;height:297mm;
+    background:#06080d;color:#fff;
+    position:relative;overflow:hidden;
+    box-shadow:0 12px 40px rgba(0,0,0,0.85),0 0 1px rgba(241,196,15,0.35);
+    border:1px solid rgba(241,196,15,0.25);
+    border-radius:3px;
+    page-break-after:always;break-after:page;
+}
+.page-bg{
+    position:absolute;top:0;left:0;width:100%;height:100%;
+    background-size:cover;background-position:center;
+    opacity:0.17;z-index:1;filter:blur(2px);
+}
+.page-inner{
+    position:relative;z-index:2;
+    display:flex;flex-direction:column;
+    justify-content:space-between;
+    height:100%;padding:18mm 17mm;
+}
+.pdf-hdr{
+    border-bottom:2px solid rgba(241,196,15,0.35);
+    padding-bottom:10px;margin-bottom:16px;
+    display:flex;justify-content:space-between;align-items:center;
+}
+.pdf-hdr h2{
+    font-family:'Montserrat',sans-serif;font-size:14px;
+    color:#fff;text-transform:uppercase;letter-spacing:1.5px;font-weight:800;
+}
+.pdf-sec-title{
+    font-family:'Montserrat',sans-serif;font-size:19px;font-weight:900;
+    color:var(--accent-gold);margin-bottom:15px;text-transform:uppercase;
+    letter-spacing:0.5px;border-left:5px solid var(--accent-gold);padding-left:11px;
+}
+.pdf-card{
+    background:rgba(18,22,32,0.88);border:1px solid rgba(241,196,15,0.3);
+    border-radius:10px;padding:14px;margin-bottom:14px;
+    backdrop-filter:blur(10px);box-shadow:0 6px 20px rgba(0,0,0,0.4);
+}
+.pdf-card-title{
+    font-family:'Montserrat',sans-serif;font-size:15px;
+    font-weight:800;color:#fff;margin-bottom:5px;
+}
+.pdf-price-tag{
+    font-family:'Montserrat',sans-serif;font-size:14px;font-weight:800;
+    color:var(--accent-gold);margin-bottom:10px;display:inline-block;
+    background:rgba(241,196,15,0.1);padding:3px 11px;
+    border-radius:5px;border:1px solid rgba(241,196,15,0.3);
+}
+.pdf-specs{list-style:none;padding:0;}
+.pdf-specs li{
+    font-size:11.5px;color:#e2e8f0;margin-bottom:5px;
+    display:flex;align-items:flex-start;gap:7px;line-height:1.4;
+}
+.pdf-specs li i{color:var(--accent-gold);font-size:10px;margin-top:3px;flex-shrink:0;}
+.pdf-img{
+    width:100%;border-radius:7px;overflow:hidden;
+    border:1px solid rgba(255,255,255,0.12);margin-bottom:11px;
+    box-shadow:0 4px 14px rgba(0,0,0,0.5);
+}
+.pdf-img img{width:100%;height:100%;object-fit:cover;display:block;}
+.pdf-footer{
+    border-top:1px solid rgba(241,196,15,0.3);padding-top:10px;
+    display:flex;justify-content:space-between;align-items:center;
+    font-size:10px;color:#8899b8;
+}
+.pdf-footer strong{color:var(--accent-gold);}
 
-        .page-inner-container {
-            position: relative;
-            z-index: 2;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            height: 100%;
-            padding: 20mm 18mm;
-        }
+/* ===== FOOTER ===== */
+footer{
+    background:rgba(9,11,16,0.96);border-top:1px solid var(--border-glass);
+    padding:40px 24px 20px;margin-top:60px;
+}
+.footer-grid{
+    max-width:1320px;margin:0 auto;
+    display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+    gap:28px;margin-bottom:28px;
+}
+.footer-col h4{
+    font-family:'Montserrat',sans-serif;font-size:13px;
+    color:var(--accent-gold);text-transform:uppercase;
+    letter-spacing:1px;margin-bottom:12px;
+}
+.footer-col p,.footer-col a{font-size:13px;color:var(--text-muted);line-height:1.9;text-decoration:none;display:block;}
+.footer-col a:hover{color:var(--accent-gold);}
+.copyright{text-align:center;font-size:11px;color:#4a5568;border-top:1px solid var(--border-glass);padding-top:18px;}
 
-        /* Page Headers & Footers */
-        .pdf-brand-hdr {
-            border-bottom: 2px solid var(--border-gold);
-            padding-bottom: 10px;
-            margin-bottom: 18px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
+/* ===== TOAST ===== */
+.toast{
+    position:fixed;top:78px;right:22px;
+    background:var(--accent-gold);color:#000;
+    padding:12px 20px;border-radius:var(--radius-md);
+    font-weight:800;font-size:13px;z-index:4000;
+    transform:translateX(160%);
+    transition:transform 0.35s cubic-bezier(0.68,-0.55,0.27,1.55);
+    display:flex;align-items:center;gap:8px;
+    box-shadow:0 10px 28px rgba(0,0,0,0.5);
+}
+.toast.show{transform:translateX(0);}
 
-        .pdf-brand-hdr h2 {
-            font-family: 'Montserrat', sans-serif;
-            font-size: 15px;
-            color: #fff;
-            text-transform: uppercase;
-            letter-spacing: 1.5px;
-            font-weight: 800;
-        }
-
-        .pdf-brand-hdr .page-num {
-            font-family: 'Montserrat', sans-serif;
-            font-size: 12px;
-            font-weight: 800;
-            color: var(--accent-gold);
-            background: rgba(241, 196, 15, 0.12);
-            padding: 4px 12px;
-            border-radius: 12px;
-            border: 1px solid var(--border-gold);
-        }
-
-        .pdf-section-title {
-            font-family: 'Montserrat', sans-serif;
-            font-size: 20px;
-            font-weight: 900;
-            color: var(--accent-gold);
-            margin-bottom: 16px;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            border-left: 5px solid var(--accent-gold);
-            padding-left: 12px;
-        }
-
-        /* Card Content Design */
-        .pdf-card {
-            background: var(--bg-card);
-            border: 1px solid var(--border-gold);
-            border-radius: 12px;
-            padding: 16px;
-            backdrop-filter: blur(10px);
-            margin-bottom: 16px;
-            box-shadow: 0 8px 25px rgba(0,0,0,0.4);
-        }
-
-        .pdf-card-title {
-            font-family: 'Montserrat', sans-serif;
-            font-size: 16px;
-            font-weight: 800;
-            color: #fff;
-            margin-bottom: 6px;
-        }
-
-        .pdf-price-tag {
-            font-family: 'Montserrat', sans-serif;
-            font-size: 15px;
-            font-weight: 800;
-            color: var(--accent-gold);
-            margin-bottom: 12px;
-            display: inline-block;
-            background: rgba(241, 196, 15, 0.12);
-            padding: 4px 12px;
-            border-radius: 6px;
-            border: 1px solid var(--border-gold);
-        }
-
-        .pdf-specs-list {
-            list-style: none;
-            padding-left: 0;
-        }
-
-        .pdf-specs-list li {
-            font-size: 12px;
-            color: #e2e8f0;
-            margin-bottom: 6px;
-            display: flex;
-            align-items: flex-start;
-            gap: 8px;
-            line-height: 1.4;
-        }
-
-        .pdf-specs-list li i {
-            color: var(--accent-gold);
-            font-size: 11px;
-            margin-top: 3px;
-            flex-shrink: 0;
-        }
-
-        .pdf-img-box {
-            width: 100%;
-            border-radius: 8px;
-            overflow: hidden;
-            border: 1px solid rgba(255,255,255,0.15);
-            margin-bottom: 12px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.5);
-        }
-
-        .pdf-img-box img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            display: block;
-        }
-
-        .pdf-footer-content {
-            border-top: 1px solid var(--border-gold);
-            padding-top: 12px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            font-size: 10.5px;
-            color: var(--text-muted);
-        }
-
-        .pdf-footer-content strong {
-            color: var(--accent-gold);
-        }
-
-        /* PRINT STYLES - Exact A4 output */
-        @media print {
-            @page {
-                size: A4 portrait;
-                margin: 0;
-            }
-            body {
-                background: none !important;
-                color: #000 !important;
-            }
-            .top-toolbar {
-                display: none !important;
-            }
-            .pdf-catalog-wrapper {
-                padding: 0 !important;
-                gap: 0 !important;
-            }
-            .printable-page {
-                margin: 0 !important;
-                box-shadow: none !important;
-                border: none !important;
-                border-radius: 0 !important;
-                page-break-after: always !important;
-                break-after: page !important;
-                width: 210mm !important;
-                height: 297mm !important;
-                max-height: 297mm !important;
-                overflow: hidden !important;
-                -webkit-print-color-adjust: exact !important;
-                print-color-adjust: exact !important;
-            }
-        }
-    </style>
+/* ===== PRINT ===== */
+@media print {
+    @page{size:A4 portrait;margin:0;}
+    body{background:none !important;}
+    .navbar,.hero,#web-view,footer,.toast{display:none !important;}
+    #pdf-view{display:block !important;}
+    .pdf-catalog-wrap{padding:0 !important;gap:0 !important;}
+    .printable-page{
+        margin:0 !important;box-shadow:none !important;border:none !important;
+        border-radius:0 !important;page-break-after:always !important;
+        break-after:page !important;width:210mm !important;height:297mm !important;
+        -webkit-print-color-adjust:exact !important;print-color-adjust:exact !important;
+    }
+}
+</style>
 </head>
 <body>
 
-    <!-- TOP TOOLBAR -->
-    <header class="top-toolbar">
-        <div class="toolbar-brand">
-            <div class="brand-icon">
-                <i class="fa-solid fa-compact-disc"></i>
+<!-- TOAST -->
+<div id="toast" class="toast"><i class="fa-solid fa-circle-check"></i><span id="toast-msg"></span></div>
+
+<!-- NAVBAR -->
+<header class="navbar">
+    <a href="#" class="nav-brand">
+        <div class="brand-icon"><i class="fa-solid fa-compact-disc"></i></div>
+        <div>
+            <div class="brand-name">IKA / IRA</div>
+            <div class="brand-sub">Sound System Production</div>
+        </div>
+    </a>
+
+    <div class="mode-switcher">
+        <button class="mode-btn active" id="btn-web" onclick="setMode('web')">
+            <i class="fa-solid fa-sliders"></i> Mode Website
+        </button>
+        <button class="mode-btn" id="btn-pdf" onclick="setMode('pdf')">
+            <i class="fa-solid fa-file-pdf"></i> View Katalog PDF
+        </button>
+    </div>
+
+    <div class="nav-right">
+        <button class="btn btn-outline btn-sm" onclick="window.print()">
+            <i class="fa-solid fa-print"></i> Cetak PDF
+        </button>
+        <a href="https://wa.me/6289638626771?text=Halo%20Ika%20Ira%20Production,%20saya%20ingin%20konsultasi%20sewa%20peralatan" target="_blank" class="btn btn-wa btn-sm">
+            <i class="fa-brands fa-whatsapp"></i> 0896-3862-6771
+        </a>
+    </div>
+</header>
+
+<!-- ===== WEBSITE MODE ===== -->
+<div id="web-view">
+
+    <!-- HERO -->
+    <section class="hero">
+        <div class="hero-badge"><i class="fa-solid fa-star"></i> Vendor Terpercaya Bogor & Jabodetabek</div>
+        <h1 class="hero-title">Katalog Sewa Peralatan<br>Event Professional</h1>
+        <p class="hero-desc">Solusi lengkap untuk event Anda — Sound System High-End, Panggung Rigging, Stage Lighting, Videotron LED, Tenda Dekorasi, hingga Alat Musik terlengkap di Bogor & Jabodetabek.</p>
+        <div class="hero-stats">
+            <div class="stat-card"><div class="stat-val">40.000W</div><div class="stat-lbl">Max Sound Capacity</div></div>
+            <div class="stat-card"><div class="stat-val">LED P3.1</div><div class="stat-lbl">HD Videotron</div></div>
+            <div class="stat-card"><div class="stat-val">Full Rigging</div><div class="stat-lbl">Panggung & Lighting</div></div>
+            <div class="stat-card"><div class="stat-val">100%</div><div class="stat-lbl">Crew Profesional</div></div>
+        </div>
+    </section>
+
+    <!-- APP CONTENT -->
+    <div class="app-container">
+        <!-- Controls -->
+        <div class="controls">
+            <div class="search-wrap">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" id="search-input" class="search-input"
+                    placeholder="Cari layanan: Sound System, Panggung, Lighting, Videotron, Drum..."
+                    oninput="filterItems()">
             </div>
-            <div>
-                <div class="brand-title">Ika / Ira Sound System Production</div>
-                <div class="brand-subtitle">Official PDF Event Catalog</div>
+            <div class="filter-pills" id="filter-pills">
+                <button class="pill active" onclick="setCategory('all',this)"><i class="fa-solid fa-border-all"></i> Semua</button>
+                <button class="pill" onclick="setCategory('sound',this)"><i class="fa-solid fa-volume-high"></i> Sound System</button>
+                <button class="pill" onclick="setCategory('panggung',this)"><i class="fa-solid fa-layer-group"></i> Panggung</button>
+                <button class="pill" onclick="setCategory('backdrop',this)"><i class="fa-solid fa-image"></i> Backdrop</button>
+                <button class="pill" onclick="setCategory('lighting',this)"><i class="fa-solid fa-lightbulb"></i> Lighting</button>
+                <button class="pill" onclick="setCategory('videotron',this)"><i class="fa-solid fa-desktop"></i> Videotron</button>
+                <button class="pill" onclick="setCategory('tenda',this)"><i class="fa-solid fa-campground"></i> Tenda & Kursi</button>
+                <button class="pill" onclick="setCategory('musik',this)"><i class="fa-solid fa-guitar"></i> Alat Musik</button>
             </div>
         </div>
 
-        <div class="toolbar-actions">
-            <div class="badge-pages">
-                <i class="fa-solid fa-file-pdf"></i> 14 Halaman A4
+        <!-- Cards Grid -->
+        <div class="catalog-grid" id="catalog-grid"></div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h4>Ika / Ira Production</h4>
+                <p>Vendor terpercaya untuk kebutuhan sound system, lighting, panggung rigging, videotron LED, tenda dekorasi & sewa alat musik terlengkap di Bogor & Jabodetabek.</p>
             </div>
-            <button class="btn btn-gold" onclick="window.print()">
-                <i class="fa-solid fa-print"></i> Cetak / Simpan PDF (Ctrl+P)
-            </button>
-            <a href="https://wa.me/6289638626771?text=Halo%20Ika%20Ira%20Sound%20System%20Production,%20saya%20ingin%20konsultasi%20sewa%20peralatan" target="_blank" class="btn btn-wa">
-                <i class="fa-brands fa-whatsapp"></i> WA: 0896-3862-6771
-            </a>
-        </div>
-    </header>
-
-    <!-- FULL 14-PAGE PDF CATALOG CONTAINER -->
-    <div class="pdf-catalog-wrapper">
-
-        <!-- 1: COVER -->
-        <div class="printable-page">
-            <div class="page-stage-bg" style="background-image: url('https://images.unsplash.com/photo-1470225620780-dba8ba36b745?auto=format&fit=crop&w=1200&q=80'); opacity: 0.35; filter: none;"></div>
-            <div class="page-inner-container" style="text-align: center;">
-                <div style="margin-top: 15px;">
-                    <div style="font-family: 'Montserrat', sans-serif; font-size: 34px; font-weight: 900; letter-spacing: 2px; color: #fff;">IKA / IRA</div>
-                    <div style="font-size: 18px; font-weight: 800; letter-spacing: 5px; color: var(--accent-gold); text-transform: uppercase;">PRODUCTION & EVENT SUPPLIER</div>
-                </div>
-
-                <div style="margin: auto 0; background: rgba(11, 14, 22, 0.85); border: 1px solid var(--border-gold); padding: 35px 20px; border-radius: 16px; backdrop-filter: blur(12px);">
-                    <div style="font-family: 'Montserrat', sans-serif; font-size: 64px; font-weight: 900; color: var(--accent-gold); letter-spacing: 6px; text-shadow: 0 4px 30px rgba(241,196,15,0.4); margin-bottom: 10px;">
-                        CATALOG
-                    </div>
-                    <div style="font-size: 13px; color: #e2e8f0; letter-spacing: 1.5px; line-height: 2; max-width: 620px; margin: 0 auto; text-transform: uppercase; font-weight: 700;">
-                        Soundsystem • Panggung Rigging • Stage Lighting • Videotron LED P3.1 • Tenda Sarnafil • Alat Musik • Genset • Barikade • Backdrop Custom
-                    </div>
-                </div>
-
-                <div style="border-top: 2px solid var(--border-gold); padding-top: 18px; display: flex; justify-content: space-between; align-items: flex-end; text-align: left;">
-                    <div style="font-size: 12px; line-height: 1.6; color: #cbd5e1; max-width: 420px;">
-                        <strong style="color: var(--accent-gold); font-size: 13px;">Alamat Workshop & Kantor:</strong><br>
-                        Perumahan Billabong Permai D3D, Jl. Pangrango VII No. 8, Bojonggede, Bogor, Jawa Barat
-                    </div>
-                    <div style="text-align: right;">
-                        <div style="font-size: 11px; color: #94a3b8; text-transform: uppercase; letter-spacing: 1px;">Reservasi WhatsApp</div>
-                        <div style="font-family: 'Montserrat', sans-serif; font-size: 22px; font-weight: 900; color: var(--accent-gold);">0896-3862-6771</div>
-                    </div>
-                </div>
+            <div class="footer-col">
+                <h4>Layanan Kami</h4>
+                <a href="#">• Sound System 2.000W – 40.000W</a>
+                <a href="#">• Panggung Rigging & Custom</a>
+                <a href="#">• Lighting Stage & Strobo</a>
+                <a href="#">• Videotron P3.1 HD</a>
+                <a href="#">• Tenda Sarnafil & Kursi Futura</a>
+                <a href="#">• Backline Alat Musik Lengkap</a>
+            </div>
+            <div class="footer-col">
+                <h4>Kontak & Workshop</h4>
+                <p><i class="fa-solid fa-location-dot" style="color:var(--accent-gold);"></i> Perumahan Billabong Permai D3D, Jl. Pangrango VII No. 8, Bojonggede, Bogor, Jawa Barat</p>
+                <p style="margin-top:10px;"><i class="fa-brands fa-whatsapp" style="color:#25D366;"></i> WhatsApp: <strong style="color:var(--accent-gold);">0896-3862-6771</strong></p>
             </div>
         </div>
+        <div class="copyright">&copy; 2026 Ika / Ira Sound System Production. All Rights Reserved.</div>
+    </footer>
+</div>
 
-        <!-- HALAMAN 2: ANEKA PANGGUNG -->
-        <div class="printable-page">
-            <div class="page-stage-bg" style="background-image: url('https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?auto=format&fit=crop&w=1000&q=80');"></div>
-            <div class="page-inner-container">
-                <div>
-                    <div class="pdf-brand-hdr">
-                        <h2>Ika / Ira Sound System Production</h2>
-                        
-                    </div>
-                    <div class="pdf-section-title">Aneka Panggung</div>
+<!-- ===== PDF VIEW ===== -->
+<div id="pdf-view">
+<div class="pdf-catalog-wrap">
 
-                    <div class="pdf-card">
-                        <div class="pdf-img-box" style="height: 230px;">
-                            <img src="https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?auto=format&fit=crop&w=1000&q=80" alt="Panggung Rigging">
-                        </div>
-                        <div class="pdf-card-title">Panggung Rigging Aluminium</div>
-                        <div class="pdf-price-tag">Harga: Rp 200.000 / meter</div>
-                        <ul class="pdf-specs-list">
-                            <li><i class="fa-solid fa-circle-check"></i> <span>Konstruksi Truss Aluminium Rigging Heavy Duty & Kokoh</span></li>
-                            <li><i class="fa-solid fa-circle-check"></i> <span>Dilengkapi Atap Canvas Terpal Anti-Air & Karpet Stage Clean</span></li>
-                            <li><i class="fa-solid fa-circle-check"></i> <span>Ketinggian Level Panggung (50 cm – 1.5 meter) Sesuai Request Event</span></li>
-                        </ul>
-                    </div>
-
-                    <div class="pdf-card">
-                        <div class="pdf-img-box" style="height: 230px;">
-                            <img src="https://images.unsplash.com/photo-1540039155733-5bb30b53aa14?auto=format&fit=crop&w=1000&q=80" alt="Panggung Custom">
-                        </div>
-                        <div class="pdf-card-title">Panggung Custom / Level Event</div>
-                        <div class="pdf-price-tag">Harga: Rp 200.000 – Rp 500.000 / meter</div>
-                        <ul class="pdf-specs-list">
-                            <li><i class="fa-solid fa-circle-check"></i> <span>Desain Formasi Custom (T-Shape, Catwalk, Circular, Multiple Level)</span></li>
-                            <li><i class="fa-solid fa-circle-check"></i> <span>Finishing Karpet Hitam/Merah Premium atau Melamin Glossy</span></li>
-                            <li><i class="fa-solid fa-circle-check"></i> <span>Sangat Ideal untuk Fashion Show, Exhibition, Awarding & Corporate Event</span></li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="pdf-footer-content">
-                    <div><strong>WhatsApp:</strong> 0896-3862-6771</div>
-                    <div><strong>Workshop:</strong> Perumahan Billabong Permai D3D, Bojonggede, Bogor</div>
+    <!-- HALAMAN 1: COVER -->
+    <div class="printable-page">
+        <div class="page-bg" style="background-image:url('https://images.unsplash.com/photo-1470225620780-dba8ba36b745?auto=format&fit=crop&w=1200&q=80');opacity:0.35;filter:none;"></div>
+        <div class="page-inner" style="text-align:center;">
+            <div style="margin-top:10px;">
+                <div style="font-family:'Montserrat',sans-serif;font-size:32px;font-weight:900;letter-spacing:2px;">IKA / IRA</div>
+                <div style="font-size:17px;font-weight:800;letter-spacing:5px;color:var(--accent-gold);text-transform:uppercase;">Sound System Production</div>
+            </div>
+            <div style="margin:auto 0;background:rgba(9,11,16,0.88);border:1px solid rgba(241,196,15,0.35);padding:32px 20px;border-radius:14px;backdrop-filter:blur(12px);">
+                <div style="font-family:'Montserrat',sans-serif;font-size:62px;font-weight:900;color:var(--accent-gold);letter-spacing:6px;text-shadow:0 4px 28px rgba(241,196,15,0.4);margin-bottom:10px;">CATALOG</div>
+                <div style="font-size:12px;color:#e2e8f0;letter-spacing:1.5px;line-height:2;max-width:580px;margin:0 auto;text-transform:uppercase;font-weight:700;">
+                    Soundsystem • Panggung Rigging • Stage Lighting • Videotron LED P3.1 • Tenda Sarnafil • Alat Musik • Genset • Barikade • Backdrop Custom
                 </div>
             </div>
-        </div>
-
-        <!-- HALAMAN 3: ANEKA BACKDROP -->
-        <div class="printable-page">
-            <div class="page-stage-bg" style="background-image: url('https://images.unsplash.com/photo-1511578314322-379afb476865?auto=format&fit=crop&w=1000&q=80');"></div>
-            <div class="page-inner-container">
-                <div>
-                    <div class="pdf-brand-hdr">
-                        <h2>Ika / Ira Sound System Production</h2>
-                        
-                    </div>
-                    <div class="pdf-section-title">Aneka Backdrop Event</div>
-
-                    <div class="pdf-card" style="padding: 24px;">
-                        <div class="pdf-img-box" style="height: 400px;">
-                            <img src="https://images.unsplash.com/photo-1511578314322-379afb476865?auto=format&fit=crop&w=1000&q=80" alt="Backdrop Custom">
-                        </div>
-                        <div class="pdf-card-title" style="font-size: 20px;">Backdrop Standar & Custom Pop-Up 3D</div>
-                        <div class="pdf-price-tag" style="font-size: 16px;">Harga: Rp 250.000 / meter</div>
-                        <ul class="pdf-specs-list" style="margin-top: 10px;">
-                            <li><i class="fa-solid fa-circle-check"></i> <span>Rangka Kayu Solid & Printing Flexi Korea High Resolution</span></li>
-                            <li><i class="fa-solid fa-circle-check"></i> <span>Opsi Model Pop-Up 3D Custom dengan Aksen LED Strip Lighting</span></li>
-                            <li><i class="fa-solid fa-circle-check"></i> <span>Sudah Termasuk Jasa Pemasangan & Bongkaran Area Bogor & Jabodetabek</span></li>
-                            <li><i class="fa-solid fa-circle-check"></i> <span>Rapi, Presisi, dan Siap Pakai untuk Seminar, Concert & Gathering</span></li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="pdf-footer-content">
-                    <div><strong>WhatsApp:</strong> 0896-3862-6771</div>
-                    <div><strong>Workshop:</strong> Perumahan Billabong Permai D3D, Bojonggede, Bogor</div>
-                </div>
-            </div>
-        </div>
-
-        <!-- HALAMAN 4: ANEKA TENDA & KURSI -->
-        <div class="printable-page">
-            <div class="page-stage-bg" style="background-image: url('https://images.unsplash.com/photo-1530103862676-de8c9debad1d?auto=format&fit=crop&w=1000&q=80');"></div>
-            <div class="page-inner-container">
-                <div>
-                    <div class="pdf-brand-hdr">
-                        <h2>Ika / Ira Sound System Production</h2>
-                        
-                    </div>
-                    <div class="pdf-section-title">Aneka Tenda & Kursi Event</div>
-
-                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
-                        <div class="pdf-card">
-                            <div class="pdf-img-box" style="height: 250px;">
-                                <img src="https://images.unsplash.com/photo-1530103862676-de8c9debad1d?auto=format&fit=crop&w=800&q=80" alt="Tenda Sarnafil">
-                            </div>
-                            <div class="pdf-card-title">Tenda Sarnafil Kerucut</div>
-                            <div class="pdf-price-tag">Sarnafil 3x3m : Rp 350.000 / unit</div>
-                            <div class="pdf-price-tag" style="margin-top:-4px;">Sarnafil 5x5m : Rp 650.000 / unit</div>
-                            <ul class="pdf-specs-list">
-                                <li><i class="fa-solid fa-circle-check"></i> <span>Terpal Kerucut Sarnafil Putih Clean</span></li>
-                                <li><i class="fa-solid fa-circle-check"></i> <span>Rangka Aluminium Rapi & Kokoh</span></li>
-                                <li><i class="fa-solid fa-circle-check"></i> <span>Lengkap Dinding Penutup Samping</span></li>
-                                <li><i class="fa-solid fa-circle-check"></i> <span>Cocok untuk Booth Bazar & VIP</span></li>
-                            </ul>
-                        </div>
-
-                        <div class="pdf-card">
-                            <div class="pdf-img-box" style="height: 250px;">
-                                <img src="https://images.unsplash.com/photo-1519167758481-83f550bb49b3?auto=format&fit=crop&w=800&q=80" alt="Tenda VIP & Kursi">
-                            </div>
-                            <div class="pdf-card-title">Tenda VIP & Kursi Futura</div>
-                            <div class="pdf-price-tag">Tenda VIP : Rp 50.000 – Rp 85.000 / m²</div>
-                            <div class="pdf-price-tag" style="margin-top:-4px;">Kursi Futura : Rp 10.000 – Rp 15.000 / unit</div>
-                            <ul class="pdf-specs-list">
-                                <li><i class="fa-solid fa-circle-check"></i> <span>Kursi Futura Polos : Rp 10.000 / unit</span></li>
-                                <li><i class="fa-solid fa-circle-check"></i> <span>Futura + Cover Press Fit & Pita : Rp 15.000</span></li>
-                                <li><i class="fa-solid fa-circle-check"></i> <span>Tenda Dekorasi VIP Serut Elegant</span></li>
-                                <li><i class="fa-solid fa-circle-check"></i> <span>Kondisi Busa Empuk & Clean</span></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="pdf-footer-content">
-                    <div><strong>WhatsApp:</strong> 0896-3862-6771</div>
-                    <div><strong>Workshop:</strong> Perumahan Billabong Permai D3D, Bojonggede, Bogor</div>
-                </div>
-            </div>
-        </div>
-
-        <!-- HALAMAN 5: ALAT MUSIK -->
-        <div class="printable-page">
-            <div class="page-stage-bg" style="background-image: url('https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=1000&q=80');"></div>
-            <div class="page-inner-container">
-                <div>
-                    <div class="pdf-brand-hdr">
-                        <h2>Ika / Ira Sound System Production</h2>
-                        
-                    </div>
-                    <div class="pdf-section-title">Alat Musik & Backline Stage</div>
-
-                    <div style="display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 16px; background: var(--bg-card); border: 1px solid var(--border-gold); border-radius: 12px; padding: 20px;">
-                        <div>
-                            <div style="font-size: 13px; line-height: 1.8; color: #fff;">
-                                <div style="margin-bottom: 8px;">
-                                    <strong style="color: var(--accent-gold);">GUITAR ELEKTRIK YAMAHA PACIFICA:</strong><br>
-                                    <span style="font-size: 14px; font-weight: 800;">Rp 300.000 / unit</span> (Include Softcase & Cable)
-                                </div>
-                                <div style="margin-bottom: 8px;">
-                                    <strong style="color: var(--accent-gold);">BASS ELEKTRIK YAMAHA BB234:</strong><br>
-                                    <span style="font-size: 14px; font-weight: 800;">Rp 300.000 / unit</span> (Include Strap & Cable)
-                                </div>
-                                <div style="margin-bottom: 8px;">
-                                    <strong style="color: var(--accent-gold);">KEYBOARD & STAGE PIANO:</strong>
-                                    <ul style="padding-left: 18px; font-size: 12px; color: #cbd5e1; margin-top: 4px;">
-                                        <li>Rolland BK3 / Juno : Rp 400.000</li>
-                                        <li>Yamaha PSR290 / Korg PA1000 : Rp 400.000</li>
-                                        <li>Stage Piano Roland RD 700 : Rp 700.000</li>
-                                    </ul>
-                                </div>
-                                <div style="margin-bottom: 8px;">
-                                    <strong style="color: var(--accent-gold);">DRUM SET ACOUSTIC & DIGITAL:</strong>
-                                    <ul style="padding-left: 18px; font-size: 12px; color: #cbd5e1; margin-top: 4px;">
-                                        <li>Yamaha DTX6K3X Digital Drum : Rp 600.000</li>
-                                        <li>Tama Superstar Classic Acoustic : Rp 700.000</li>
-                                        <li>Mic Drum Set AKG Professional : Rp 300.000</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div style="display: flex; flex-direction: column; gap: 10px;">
-                            <div class="pdf-img-box" style="height: 140px; margin-bottom: 0;">
-                                <img src="https://images.unsplash.com/photo-1564186763535-ebb21ef5277f?auto=format&fit=crop&w=600&q=80" alt="Guitar Yamaha">
-                            </div>
-                            <div class="pdf-img-box" style="height: 140px; margin-bottom: 0;">
-                                <img src="https://images.unsplash.com/photo-1462965326201-d02e4f455804?auto=format&fit=crop&w=600&q=80" alt="Keyboard Synthesizer">
-                            </div>
-                            <div class="pdf-img-box" style="height: 150px; margin-bottom: 0;">
-                                <img src="https://images.unsplash.com/photo-1519892300165-cb5542fb47c7?auto=format&fit=crop&w=600&q=80" alt="Drum Set Tama">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="pdf-footer-content">
-                    <div><strong>WhatsApp:</strong> 0896-3862-6771</div>
-                    <div><strong>Workshop:</strong> Perumahan Billabong Permai D3D, Bojonggede, Bogor</div>
-                </div>
-            </div>
-        </div>
-
-        <!-- HALAMAN 6: VIDEOTRON -->
-        <div class="printable-page">
-            <div class="page-stage-bg" style="background-image: url('https://images.unsplash.com/photo-1540575467063-178a50c2df87?auto=format&fit=crop&w=1000&q=80');"></div>
-            <div class="page-inner-container">
-                <div>
-                    <div class="pdf-brand-hdr">
-                        <h2>Ika / Ira Sound System Production</h2>
-                        
-                    </div>
-                    <div class="pdf-section-title">Videotron Stage High Resolution</div>
-
-                    <div class="pdf-card" style="padding: 24px;">
-                        <div class="pdf-img-box" style="height: 380px;">
-                            <img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?auto=format&fit=crop&w=1000&q=80" alt="Videotron P3.1">
-                        </div>
-                        <div class="pdf-card-title" style="font-size: 20px;">Videotron LED Display P3.1 Indoor / Outdoor</div>
-                        <div class="pdf-price-tag" style="font-size: 16px;">Harga: Rp 600.000 / m²</div>
-                        <ul class="pdf-specs-list" style="margin-top: 10px;">
-                            <li><i class="fa-solid fa-circle-check"></i> <span>Spesifikasi Modul LED Pixel Pitch P3.1 Ultra Sharp Resolution</span></li>
-                            <li><i class="fa-solid fa-circle-check"></i> <span>Ketinggian Level Sub-structure Panggung 50 cm – 100 cm</span></li>
-                            <li><i class="fa-solid fa-circle-check"></i> <span>Include 1 Unit Control Laptop Master & Operator Video Standby Full Event</span></li>
-                            <li><i class="fa-solid fa-circle-check"></i> <span>Sangat Cocok untuk Concert Background, Presentation & Live Visual</span></li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="pdf-footer-content">
-                    <div><strong>WhatsApp:</strong> 0896-3862-6771</div>
-                    <div><strong>Workshop:</strong> Perumahan Billabong Permai D3D, Bojonggede, Bogor</div>
-                </div>
-            </div>
-        </div>
-
-        <!-- HALAMAN 7: PAKET LIGHTING -->
-        <div class="printable-page">
-            <div class="page-stage-bg" style="background-image: url('https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?auto=format&fit=crop&w=1000&q=80');"></div>
-            <div class="page-inner-container">
-                <div>
-                    <div class="pdf-brand-hdr">
-                        <h2>Ika / Ira Sound System Production</h2>
-                        
-                    </div>
-                    <div class="pdf-section-title">Paket Lighting Panggung</div>
-
-                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
-                        <div class="pdf-card">
-                            <div class="pdf-img-box" style="height: 250px;">
-                                <img src="https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?auto=format&fit=crop&w=800&q=80" alt="Paket Lighting A">
-                            </div>
-                            <div class="pdf-card-title">Paket Stage Lighting A</div>
-                            <div class="pdf-price-tag">Harga: Rp 3.500.000</div>
-                            <ul class="pdf-specs-list">
-                                <li><i class="fa-solid fa-circle-check"></i> <span>8 Unit Parled TRF Spotlight</span></li>
-                                <li><i class="fa-solid fa-circle-check"></i> <span>4 Unit Moving Beam Clara S</span></li>
-                                <li><i class="fa-solid fa-circle-check"></i> <span>5 Unit Strobo Flash Light</span></li>
-                                <li><i class="fa-solid fa-circle-check"></i> <span>2 Unit Fresnel Warm Light + Stand</span></li>
-                                <li><i class="fa-solid fa-circle-check"></i> <span>Mixer Lighting Kingkong Console</span></li>
-                            </ul>
-                        </div>
-
-                        <div class="pdf-card">
-                            <div class="pdf-img-box" style="height: 250px;">
-                                <img src="https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?auto=format&fit=crop&w=800&q=80" alt="Paket Lighting B">
-                            </div>
-                            <div class="pdf-card-title">Paket Stage Lighting B</div>
-                            <div class="pdf-price-tag">Harga: Rp 2.500.000</div>
-                            <ul class="pdf-specs-list">
-                                <li><i class="fa-solid fa-circle-check"></i> <span>8 Unit Parled TRF Spotlight</span></li>
-                                <li><i class="fa-solid fa-circle-check"></i> <span>2 Unit Moving Beam Clara S</span></li>
-                                <li><i class="fa-solid fa-circle-check"></i> <span>4 Unit Strobo Flash Light</span></li>
-                                <li><i class="fa-solid fa-circle-check"></i> <span>2 Unit Fresnel Warm Light + Stand</span></li>
-                                <li><i class="fa-solid fa-circle-check"></i> <span>Mixer Lighting Kingkong E Console</span></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="pdf-footer-content">
-                    <div><strong>WhatsApp:</strong> 0896-3862-6771</div>
-                    <div><strong>Workshop:</strong> Perumahan Billabong Permai D3D, Bojonggede, Bogor</div>
-                </div>
-            </div>
-        </div>
-
-        <!-- HALAMAN 8: SOUND 2.000W & 3.000W -->
-        <div class="printable-page">
-            <div class="page-stage-bg" style="background-image: url('https://images.unsplash.com/photo-1545128485-c400e7702796?auto=format&fit=crop&w=1000&q=80');"></div>
-            <div class="page-inner-container">
-                <div>
-                    <div class="pdf-brand-hdr">
-                        <h2>Ika / Ira Sound System Production</h2>
-                        
-                    </div>
-                    <div class="pdf-section-title">Sound System Standard Capacity</div>
-
-                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
-                        <div class="pdf-card">
-                            <div class="pdf-img-box" style="height: 250px;">
-                                <img src="https://images.unsplash.com/photo-1545128485-c400e7702796?auto=format&fit=crop&w=800&q=80" alt="Paket 2000W">
-                            </div>
-                            <div class="pdf-card-title">Paket Sound 2.000 Watt</div>
-                            <div class="pdf-price-tag">Harga: Rp 2.000.000</div>
-                            <ul class="pdf-specs-list">
-                                <li><i class="fa-solid fa-circle-check"></i> <span>2 Unit Sub + Triway Turbosound IP2000</span></li>
-                                <li><i class="fa-solid fa-circle-check"></i> <span>2 Unit Monitor Turbosound Milan M15</span></li>
-                                <li><i class="fa-solid fa-circle-check"></i> <span>Mixer AD Live Pro Console</span></li>
-                                <li><i class="fa-solid fa-circle-check"></i> <span>Mic Wireless Hardwell & Shure SM58</span></li>
-                            </ul>
-                        </div>
-
-                        <div class="pdf-card">
-                            <div class="pdf-img-box" style="height: 250px;">
-                                <img src="https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?auto=format&fit=crop&w=800&q=80" alt="Paket 3000W">
-                            </div>
-                            <div class="pdf-card-title">Paket Sound 3.000 Watt</div>
-                            <div class="pdf-price-tag">Harga: Rp 3.000.000</div>
-                            <ul class="pdf-specs-list">
-                                <li><i class="fa-solid fa-circle-check"></i> <span>2 Unit Sub Turbosound IP2000</span></li>
-                                <li><i class="fa-solid fa-circle-check"></i> <span>3 Unit Monitor Turbosound Milan M15</span></li>
-                                <li><i class="fa-solid fa-circle-check"></i> <span>Mixer Midas M32R + DL 32 Midas</span></li>
-                                <li><i class="fa-solid fa-circle-check"></i> <span>Mic Wireless Hardwell & Shure SM58</span></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="pdf-footer-content">
-                    <div><strong>WhatsApp:</strong> 0896-3862-6771</div>
-                    <div><strong>Workshop:</strong> Perumahan Billabong Permai D3D, Bojonggede, Bogor</div>
-                </div>
-            </div>
-        </div>
-
-        <!-- HALAMAN 9: SOUND 5.000 WATT -->
-        <div class="printable-page">
-            <div class="page-stage-bg" style="background-image: url('https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?auto=format&fit=crop&w=1000&q=80');"></div>
-            <div class="page-inner-container">
-                <div>
-                    <div class="pdf-brand-hdr">
-                        <h2>Ika / Ira Sound System Production</h2>
-                        
-                    </div>
-                    <div class="pdf-section-title">Sound System 5.000 Watt</div>
-
-                    <div class="pdf-card" style="padding: 24px;">
-                        <div class="pdf-img-box" style="height: 380px;">
-                            <img src="https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?auto=format&fit=crop&w=1000&q=80" alt="Sound 5000W">
-                        </div>
-                        <div class="pdf-card-title" style="font-size: 20px;">Kapasitas 5.000 Watt Professional</div>
-                        <div class="pdf-price-tag" style="font-size: 16px;">Harga: Rp 5.000.000</div>
-                        <ul class="pdf-specs-list" style="margin-top: 10px;">
-                            <li><i class="fa-solid fa-circle-check"></i> <span>PA Speaker: 2 Unit Sub Evo / IP2000 & 2 Unit Yamaha DSR Active</span></li>
-                            <li><i class="fa-solid fa-circle-check"></i> <span>Stage Monitor: 4 Unit Turbosound Milan M15 High Clarity</span></li>
-                            <li><i class="fa-solid fa-circle-check"></i> <span>Mixer System: Midas M32R + DL 32 Midas Digital Snake System</span></li>
-                            <li><i class="fa-solid fa-circle-check"></i> <span>Aksesoris: Mic Wireless Hardwell, Shure SM58, Mic Drum Kit AKG & DI Box</span></li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="pdf-footer-content">
-                    <div><strong>WhatsApp:</strong> 0896-3862-6771</div>
-                    <div><strong>Workshop:</strong> Perumahan Billabong Permai D3D, Bojonggede, Bogor</div>
-                </div>
-            </div>
-        </div>
-
-        <!-- 10: SOUND 10.000 WATT -->
-        <div class="printable-page">
-            <div class="page-stage-bg" style="background-image: url('https://images.unsplash.com/photo-1470225620780-dba8ba36b745?auto=format&fit=crop&w=1000&q=80');"></div>
-            <div class="page-inner-container">
-                <div>
-                    <div class="pdf-brand-hdr">
-                        <h2>Ika / Ira Sound System Production</h2>
-                        
-                    </div>
-                    <div class="pdf-section-title">Sound System 10.000 Watt</div>
-
-                    <div class="pdf-card" style="padding: 24px;">
-                        <div class="pdf-img-box" style="height: 380px;">
-                            <img src="https://images.unsplash.com/photo-1470225620780-dba8ba36b745?auto=format&fit=crop&w=1000&q=80" alt="Sound 10000W">
-                        </div>
-                        <div class="pdf-card-title" style="font-size: 20px;">Kapasitas 10.000 Watt Concert Grade</div>
-                        <div class="pdf-price-tag" style="font-size: 16px;">Harga: Rp 10.000.000</div>
-                        <ul class="pdf-specs-list" style="margin-top: 10px;">
-                            <li><i class="fa-solid fa-circle-check"></i> <span>PA Speaker: 4 Unit Subwoofer TTS36218, 4 Unit Line Array Vera 110, Low Pack 115</span></li>
-                            <li><i class="fa-solid fa-circle-check"></i> <span>Stage Monitor: 6 Unit Milan M15 & Ear Monitor Behringer P1</span></li>
-                            <li><i class="fa-solid fa-circle-check"></i> <span>Mixer System: Midas M32R & M32 Live + DL 32 Midas Stagebox</span></li>
-                            <li><i class="fa-solid fa-circle-check"></i> <span>Komunikasi Intercom: Clearcom Hollyland Wireless Intercom System</span></li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="pdf-footer-content">
-                    <div><strong>WhatsApp:</strong> 0896-3862-6771</div>
-                    <div><strong>Workshop:</strong> Perumahan Billabong Permai D3D, Bojonggede, Bogor</div>
-                </div>
-            </div>
-        </div>
-
-        <!-- 11: SOUND 15.000 WATT -->
-        <div class="printable-page">
-            <div class="page-stage-bg" style="background-image: url('https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?auto=format&fit=crop&w=1000&q=80');"></div>
-            <div class="page-inner-container">
-                <div>
-                    <div class="pdf-brand-hdr">
-                        <h2>Ika / Ira Sound System Production</h2>
-                        
-                    </div>
-                    <div class="pdf-section-title">Sound System 15.000 Watt</div>
-
-                    <div class="pdf-card" style="padding: 24px;">
-                        <div class="pdf-img-box" style="height: 380px;">
-                            <img src="https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?auto=format&fit=crop&w=1000&q=80" alt="Sound 15000W">
-                        </div>
-                        <div class="pdf-card-title" style="font-size: 20px;">Kapasitas 15.000 Watt High Output</div>
-                        <div class="pdf-price-tag" style="font-size: 16px;">Harga: Rp 15.000.000</div>
-                        <ul class="pdf-specs-list" style="margin-top: 10px;">
-                            <li><i class="fa-solid fa-circle-check"></i> <span>PA Speaker: 6 Unit Subwoofer TTS36218, 4 Unit Vera 110, Low Pack 115</span></li>
-                            <li><i class="fa-solid fa-circle-check"></i> <span>Monitor System: 6 Unit Turbosound Milan M15, 4 Unit In-Ear Monitor P1</span></li>
-                            <li><i class="fa-solid fa-circle-check"></i> <span>Mixer & Control: Midas M32R, M32 Live, DL 32 Stagebox</span></li>
-                            <li><i class="fa-solid fa-circle-check"></i> <span>Intercom System: Clearcom Hollyland Wireless Intercom Setup</span></li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="pdf-footer-content">
-                    <div><strong>WhatsApp:</strong> 0896-3862-6771</div>
-                    <div><strong>Workshop:</strong> Perumahan Billabong Permai D3D, Bojonggede, Bogor</div>
-                </div>
-            </div>
-        </div>
-
-        <!-- 12: SOUND 20.000 WATT -->
-        <div class="printable-page">
-            <div class="page-stage-bg" style="background-image: url('https://images.unsplash.com/photo-1540039155733-5bb30b53aa14?auto=format&fit=crop&w=1000&q=80');"></div>
-            <div class="page-inner-container">
-                <div>
-                    <div class="pdf-brand-hdr">
-                        <h2>Ika / Ira Sound System Production</h2>
-                        
-                    </div>
-                    <div class="pdf-section-title">Sound System 20.000 Watt Concert Level</div>
-
-                    <div class="pdf-card" style="padding: 24px;">
-                        <div class="pdf-img-box" style="height: 380px;">
-                            <img src="https://images.unsplash.com/photo-1540039155733-5bb30b53aa14?auto=format&fit=crop&w=1000&q=80" alt="Sound 20000W">
-                        </div>
-                        <div class="pdf-card-title" style="font-size: 20px;">Kapasitas 20.000 Watt Arena Concert</div>
-                        <div class="pdf-price-tag" style="font-size: 16px;">Harga: Rp 20.000.000</div>
-                        <ul class="pdf-specs-list" style="margin-top: 10px;">
-                            <li><i class="fa-solid fa-circle-check"></i> <span>PA Speaker: 8 Unit Subwoofer TTS36218, 8 Unit Line Array RDW Tara123</span></li>
-                            <li><i class="fa-solid fa-circle-check"></i> <span>Monitor Stage: 8 Unit Milan M15, 2 Unit Side Fill Yamaha DSR 215 High Power</span></li>
-                            <li><i class="fa-solid fa-circle-check"></i> <span>Control Desk: Midas M32R & M32 Live + DL 32 Midas Stagebox</span></li>
-                            <li><i class="fa-solid fa-circle-check"></i> <span>Intercom System: Clearcom Hollyland Wireless Intercom Crew System</span></li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="pdf-footer-content">
-                    <div><strong>WhatsApp:</strong> 0896-3862-6771</div>
-                    <div><strong>Workshop:</strong> Perumahan Billabong Permai D3D, Bojonggede, Bogor</div>
-                </div>
-            </div>
-        </div>
-
-        <!-- 13: SOUND 40.000 WATT -->
-        <div class="printable-page">
-            <div class="page-stage-bg" style="background-image: url('https://images.unsplash.com/photo-1470225620780-dba8ba36b745?auto=format&fit=crop&w=1000&q=80');"></div>
-            <div class="page-inner-container">
-                <div>
-                    <div class="pdf-brand-hdr">
-                        <h2>Ika / Ira Sound System Production</h2>
-                        
-                    </div>
-                    <div class="pdf-section-title">Sound System 40.000 Watt Stadium Level</div>
-
-                    <div class="pdf-card" style="padding: 24px;">
-                        <div class="pdf-img-box" style="height: 380px;">
-                            <img src="https://images.unsplash.com/photo-1470225620780-dba8ba36b745?auto=format&fit=crop&w=1000&q=80" alt="Sound 40000W">
-                        </div>
-                        <div class="pdf-card-title" style="font-size: 20px;">Kapasitas 40.000 Watt Stadium Concert Flagship</div>
-                        <div class="pdf-price-tag" style="font-size: 16px;">Harga: Rp 40.000.000</div>
-                        <ul class="pdf-specs-list" style="margin-top: 10px;">
-                            <li><i class="fa-solid fa-circle-check"></i> <span>PA Speaker: 16 Unit Subwoofer TTS36218, 16 Unit Line Array RDW Tara123</span></li>
-                            <li><i class="fa-solid fa-circle-check"></i> <span>Monitor Stage: 10 Unit Milan M15, 2 Unit Side Fill Yamaha DSR215 Stadium Output</span></li>
-                            <li><i class="fa-solid fa-circle-check"></i> <span>Mixing & Control: Dual Midas M32 Consoles, DL 32 Stagebox, Full Mic Rigging</span></li>
-                            <li><i class="fa-solid fa-circle-check"></i> <span>Super Stadium Class Clarity, Power & Professional Engineering Team</span></li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="pdf-footer-content">
-                    <div><strong>WhatsApp:</strong> 0896-3862-6771</div>
-                    <div><strong>Workshop:</strong> Perumahan Billabong Permai D3D, Bojonggede, Bogor</div>
-                </div>
-            </div>
-        </div>
-
-        <!-- 14: COVER PENUTUP & KONTAK -->
-        <div class="printable-page">
-            <div class="page-stage-bg" style="background-image: url('https://images.unsplash.com/photo-1470225620780-dba8ba36b745?auto=format&fit=crop&w=1200&q=80'); opacity: 0.35; filter: none;"></div>
-            <div class="page-inner-container" style="text-align: center; justify-content: center;">
-                <div style="margin-bottom: 30px;">
-                    <div style="font-family: 'Montserrat', sans-serif; font-size: 38px; font-weight: 900; letter-spacing: 2px;">IKA / IRA</div>
-                    <div style="font-size: 20px; font-weight: 800; color: var(--accent-gold); text-transform: uppercase; letter-spacing: 4px;">PRODUCTION & EVENT SUPPLIER</div>
-                </div>
-
-                <div style="font-family: 'Montserrat', sans-serif; font-size: 22px; color: var(--accent-gold); margin-bottom: 30px; font-weight: 800; text-transform: uppercase;">
-                    Terima Kasih Atas Kepercayaan Anda
-                </div>
-
-                <div style="margin: 0 auto 35px; max-width: 550px; font-size: 14px; color: #e2e8f0; line-height: 1.8; background: rgba(11, 14, 22, 0.85); border: 1px solid var(--border-gold); border-radius: 16px; padding: 25px; backdrop-filter: blur(12px);">
-                    <strong style="color: var(--accent-gold); font-size: 16px;">Workshop & Office:</strong><br>
+            <div style="border-top:2px solid rgba(241,196,15,0.4);padding-top:16px;display:flex;justify-content:space-between;align-items:flex-end;text-align:left;">
+                <div style="font-size:11px;line-height:1.6;color:#cbd5e1;max-width:380px;">
+                    <strong style="color:var(--accent-gold);font-size:12px;">Alamat Workshop & Kantor:</strong><br>
                     Perumahan Billabong Permai D3D, Jl. Pangrango VII No. 8, Bojonggede, Bogor, Jawa Barat
                 </div>
+                <div style="text-align:right;">
+                    <div style="font-size:10px;color:#94a3b8;text-transform:uppercase;letter-spacing:1px;">Reservasi WhatsApp</div>
+                    <div style="font-family:'Montserrat',sans-serif;font-size:20px;font-weight:900;color:var(--accent-gold);">0896-3862-6771</div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-                <div style="text-align: center;">
-                    <div style="font-size: 13px; color: #94a3b8; text-transform: uppercase; letter-spacing: 1.5px; font-weight: 700;">Hubungi Kami / Reservasi WhatsApp</div>
-                    <div style="font-family: 'Montserrat', sans-serif; font-size: 36px; font-weight: 900; color: var(--accent-gold); margin-top: 6px;">0896-3862-6771</div>
-                    <a href="https://wa.me/6289638626771?text=Halo%20Ika%20Ira%20Sound%20System%20Production,%20saya%20ingin%20konsultasi%20sewa%20peralatan" target="_blank" class="btn btn-wa" style="margin-top: 20px; font-size: 15px; padding: 12px 28px;">
-                        <i class="fa-brands fa-whatsapp"></i> Chat Direct WhatsApp
+    <!-- HALAMAN 2: ANEKA PANGGUNG -->
+    <div class="printable-page">
+        <div class="page-bg" style="background-image:url('https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?auto=format&fit=crop&w=1000&q=80');"></div>
+        <div class="page-inner">
+            <div>
+                <div class="pdf-hdr"><h2>Ika / Ira Sound System Production</h2></div>
+                <div class="pdf-sec-title">Aneka Panggung</div>
+                <div class="pdf-card">
+                    <div class="pdf-img" style="height:220px;"><img src="https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?auto=format&fit=crop&w=1000&q=80" alt="Panggung Rigging"></div>
+                    <div class="pdf-card-title">Panggung Rigging Aluminium</div>
+                    <div class="pdf-price-tag">Rp 200.000 / meter</div>
+                    <ul class="pdf-specs">
+                        <li><i class="fa-solid fa-circle-check"></i><span>Konstruksi Truss Aluminium Rigging Heavy Duty & Kokoh</span></li>
+                        <li><i class="fa-solid fa-circle-check"></i><span>Dilengkapi Atap Canvas Terpal Anti-Air & Karpet Stage Clean</span></li>
+                        <li><i class="fa-solid fa-circle-check"></i><span>Ketinggian Level Panggung (50 cm – 1.5 meter) Sesuai Request</span></li>
+                    </ul>
+                </div>
+                <div class="pdf-card">
+                    <div class="pdf-img" style="height:220px;"><img src="https://images.unsplash.com/photo-1540039155733-5bb30b53aa14?auto=format&fit=crop&w=1000&q=80" alt="Panggung Custom"></div>
+                    <div class="pdf-card-title">Panggung Custom / Level Event</div>
+                    <div class="pdf-price-tag">Rp 200.000 – Rp 500.000 / meter</div>
+                    <ul class="pdf-specs">
+                        <li><i class="fa-solid fa-circle-check"></i><span>Desain Formasi Custom (T-Shape, Catwalk, Circular, Multiple Level)</span></li>
+                        <li><i class="fa-solid fa-circle-check"></i><span>Finishing Karpet Premium atau Melamin Glossy</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="pdf-footer"><div><strong>WhatsApp:</strong> 0896-3862-6771</div><div><strong>Workshop:</strong> Perumahan Billabong Permai D3D, Bojonggede, Bogor</div></div>
+        </div>
+    </div>
+
+    <!-- HALAMAN 3: BACKDROP -->
+    <div class="printable-page">
+        <div class="page-bg" style="background-image:url('https://images.unsplash.com/photo-1511578314322-379afb476865?auto=format&fit=crop&w=1000&q=80');"></div>
+        <div class="page-inner">
+            <div>
+                <div class="pdf-hdr"><h2>Ika / Ira Sound System Production</h2></div>
+                <div class="pdf-sec-title">Aneka Backdrop Event</div>
+                <div class="pdf-card" style="padding:22px;">
+                    <div class="pdf-img" style="height:390px;"><img src="https://images.unsplash.com/photo-1511578314322-379afb476865?auto=format&fit=crop&w=1000&q=80" alt="Backdrop Custom"></div>
+                    <div class="pdf-card-title" style="font-size:18px;">Backdrop Standar & Custom Pop-Up 3D</div>
+                    <div class="pdf-price-tag" style="font-size:15px;">Rp 250.000 / meter</div>
+                    <ul class="pdf-specs" style="margin-top:8px;">
+                        <li><i class="fa-solid fa-circle-check"></i><span>Rangka Kayu Solid & Printing Flexi Korea High Resolution</span></li>
+                        <li><i class="fa-solid fa-circle-check"></i><span>Opsi Pop-Up 3D Custom dengan Aksen LED Strip Lighting</span></li>
+                        <li><i class="fa-solid fa-circle-check"></i><span>Termasuk Jasa Pemasangan & Bongkaran Area Bogor & Jabodetabek</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="pdf-footer"><div><strong>WhatsApp:</strong> 0896-3862-6771</div><div><strong>Workshop:</strong> Perumahan Billabong Permai D3D, Bojonggede, Bogor</div></div>
+        </div>
+    </div>
+
+    <!-- HALAMAN 4: TENDA & KURSI -->
+    <div class="printable-page">
+        <div class="page-bg" style="background-image:url('https://images.unsplash.com/photo-1530103862676-de8c9debad1d?auto=format&fit=crop&w=1000&q=80');"></div>
+        <div class="page-inner">
+            <div>
+                <div class="pdf-hdr"><h2>Ika / Ira Sound System Production</h2></div>
+                <div class="pdf-sec-title">Aneka Tenda & Kursi Event</div>
+                <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;">
+                    <div class="pdf-card">
+                        <div class="pdf-img" style="height:240px;"><img src="https://images.unsplash.com/photo-1530103862676-de8c9debad1d?auto=format&fit=crop&w=800&q=80" alt="Tenda Sarnafil"></div>
+                        <div class="pdf-card-title">Tenda Sarnafil Kerucut</div>
+                        <div class="pdf-price-tag">3x3m : Rp 350.000</div>
+                        <div class="pdf-price-tag" style="margin-top:-4px;">5x5m : Rp 650.000</div>
+                        <ul class="pdf-specs"><li><i class="fa-solid fa-circle-check"></i><span>Terpal Kerucut Sarnafil Putih Clean</span></li><li><i class="fa-solid fa-circle-check"></i><span>Rangka Aluminium Kokoh + Dinding Samping</span></li></ul>
+                    </div>
+                    <div class="pdf-card">
+                        <div class="pdf-img" style="height:240px;"><img src="https://images.unsplash.com/photo-1519167758481-83f550bb49b3?auto=format&fit=crop&w=800&q=80" alt="Tenda VIP"></div>
+                        <div class="pdf-card-title">Tenda VIP & Kursi Futura</div>
+                        <div class="pdf-price-tag">VIP: Rp 50.000–85.000/m²</div>
+                        <div class="pdf-price-tag" style="margin-top:-4px;">Kursi: Rp 10.000–15.000/unit</div>
+                        <ul class="pdf-specs"><li><i class="fa-solid fa-circle-check"></i><span>Tenda Dekorasi Elegant</span></li><li><i class="fa-solid fa-circle-check"></i><span>Kursi Futura Polos / Cover Pita</span></li></ul>
+                    </div>
+                </div>
+            </div>
+            <div class="pdf-footer"><div><strong>WhatsApp:</strong> 0896-3862-6771</div><div><strong>Workshop:</strong> Perumahan Billabong Permai D3D, Bojonggede, Bogor</div></div>
+        </div>
+    </div>
+
+    <!-- HALAMAN 5: ALAT MUSIK -->
+    <div class="printable-page">
+        <div class="page-bg" style="background-image:url('https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=1000&q=80');"></div>
+        <div class="page-inner">
+            <div>
+                <div class="pdf-hdr"><h2>Ika / Ira Sound System Production</h2></div>
+                <div class="pdf-sec-title">Alat Musik & Backline Stage</div>
+                <div style="display:grid;grid-template-columns:1.1fr 0.9fr;gap:14px;background:rgba(18,22,32,0.88);border:1px solid rgba(241,196,15,0.3);border-radius:10px;padding:18px;">
+                    <div style="font-size:12.5px;line-height:1.8;color:#fff;">
+                        <div style="margin-bottom:8px;"><strong style="color:var(--accent-gold);">GUITAR YAMAHA PACIFICA:</strong><br><span style="font-weight:800;">Rp 300.000</span> (Softcase & Cable)</div>
+                        <div style="margin-bottom:8px;"><strong style="color:var(--accent-gold);">BASS YAMAHA BB234:</strong><br><span style="font-weight:800;">Rp 300.000</span> (Strap & Cable)</div>
+                        <div style="margin-bottom:8px;"><strong style="color:var(--accent-gold);">KEYBOARD & STAGE PIANO:</strong>
+                            <ul style="padding-left:16px;font-size:11.5px;color:#cbd5e1;margin-top:3px;">
+                                <li>Rolland BK3 / Juno : Rp 400.000</li><li>Yamaha PSR290 / Korg PA1000 : Rp 400.000</li><li>Stage Piano Roland RD 700 : Rp 700.000</li>
+                            </ul>
+                        </div>
+                        <div><strong style="color:var(--accent-gold);">DRUM SET:</strong>
+                            <ul style="padding-left:16px;font-size:11.5px;color:#cbd5e1;margin-top:3px;">
+                                <li>Yamaha DTX6K3X Digital : Rp 600.000</li><li>Tama Superstar Classic : Rp 700.000</li><li>Mic Drum Set AKG : Rp 300.000</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div style="display:flex;flex-direction:column;gap:9px;">
+                        <div class="pdf-img" style="height:135px;margin-bottom:0;"><img src="https://images.unsplash.com/photo-1564186763535-ebb21ef5277f?auto=format&fit=crop&w=600&q=80" alt="Guitar"></div>
+                        <div class="pdf-img" style="height:135px;margin-bottom:0;"><img src="https://images.unsplash.com/photo-1462965326201-d02e4f455804?auto=format&fit=crop&w=600&q=80" alt="Keyboard"></div>
+                        <div class="pdf-img" style="height:145px;margin-bottom:0;"><img src="https://images.unsplash.com/photo-1519892300165-cb5542fb47c7?auto=format&fit=crop&w=600&q=80" alt="Drum"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="pdf-footer"><div><strong>WhatsApp:</strong> 0896-3862-6771</div><div><strong>Workshop:</strong> Perumahan Billabong Permai D3D, Bojonggede, Bogor</div></div>
+        </div>
+    </div>
+
+    <!-- HALAMAN 6: VIDEOTRON -->
+    <div class="printable-page">
+        <div class="page-bg" style="background-image:url('https://images.unsplash.com/photo-1540575467063-178a50c2df87?auto=format&fit=crop&w=1000&q=80');"></div>
+        <div class="page-inner">
+            <div>
+                <div class="pdf-hdr"><h2>Ika / Ira Sound System Production</h2></div>
+                <div class="pdf-sec-title">Videotron Stage High Resolution</div>
+                <div class="pdf-card" style="padding:22px;">
+                    <div class="pdf-img" style="height:370px;"><img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?auto=format&fit=crop&w=1000&q=80" alt="Videotron"></div>
+                    <div class="pdf-card-title" style="font-size:18px;">Videotron LED Display P3.1 Indoor / Outdoor</div>
+                    <div class="pdf-price-tag" style="font-size:15px;">Harga: Rp 600.000 / m²</div>
+                    <ul class="pdf-specs" style="margin-top:8px;">
+                        <li><i class="fa-solid fa-circle-check"></i><span>Pixel Pitch P3.1 Ultra Sharp Resolution</span></li>
+                        <li><i class="fa-solid fa-circle-check"></i><span>Level Sub-structure Panggung 50 cm – 100 cm</span></li>
+                        <li><i class="fa-solid fa-circle-check"></i><span>Include Laptop Master Control & Operator Standby Full Event</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="pdf-footer"><div><strong>WhatsApp:</strong> 0896-3862-6771</div><div><strong>Workshop:</strong> Perumahan Billabong Permai D3D, Bojonggede, Bogor</div></div>
+        </div>
+    </div>
+
+    <!-- HALAMAN 7: LIGHTING -->
+    <div class="printable-page">
+        <div class="page-bg" style="background-image:url('https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?auto=format&fit=crop&w=1000&q=80');"></div>
+        <div class="page-inner">
+            <div>
+                <div class="pdf-hdr"><h2>Ika / Ira Sound System Production</h2></div>
+                <div class="pdf-sec-title">Paket Lighting Panggung</div>
+                <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;">
+                    <div class="pdf-card">
+                        <div class="pdf-img" style="height:245px;"><img src="https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?auto=format&fit=crop&w=800&q=80" alt="Lighting A"></div>
+                        <div class="pdf-card-title">Paket Stage Lighting A</div>
+                        <div class="pdf-price-tag">Rp 3.500.000</div>
+                        <ul class="pdf-specs"><li><i class="fa-solid fa-circle-check"></i><span>8 Unit Parled TRF + 4 Beam Clara S</span></li><li><i class="fa-solid fa-circle-check"></i><span>5 Strobo + 2 Fresnel + Stand Tripod</span></li><li><i class="fa-solid fa-circle-check"></i><span>Mixer Lighting Kingkong Console</span></li></ul>
+                    </div>
+                    <div class="pdf-card">
+                        <div class="pdf-img" style="height:245px;"><img src="https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?auto=format&fit=crop&w=800&q=80" alt="Lighting B"></div>
+                        <div class="pdf-card-title">Paket Stage Lighting B</div>
+                        <div class="pdf-price-tag">Rp 2.500.000</div>
+                        <ul class="pdf-specs"><li><i class="fa-solid fa-circle-check"></i><span>8 Unit Parled TRF + 2 Beam Clara S</span></li><li><i class="fa-solid fa-circle-check"></i><span>4 Strobo + 2 Fresnel + Stand Tripod</span></li><li><i class="fa-solid fa-circle-check"></i><span>Mixer Lighting Kingkong E Console</span></li></ul>
+                    </div>
+                </div>
+            </div>
+            <div class="pdf-footer"><div><strong>WhatsApp:</strong> 0896-3862-6771</div><div><strong>Workshop:</strong> Perumahan Billabong Permai D3D, Bojonggede, Bogor</div></div>
+        </div>
+    </div>
+
+    <!-- HALAMAN 8: SOUND 2K & 3K -->
+    <div class="printable-page">
+        <div class="page-bg" style="background-image:url('https://images.unsplash.com/photo-1545128485-c400e7702796?auto=format&fit=crop&w=1000&q=80');"></div>
+        <div class="page-inner">
+            <div>
+                <div class="pdf-hdr"><h2>Ika / Ira Sound System Production</h2></div>
+                <div class="pdf-sec-title">Sound System Standard Capacity</div>
+                <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;">
+                    <div class="pdf-card">
+                        <div class="pdf-img" style="height:245px;"><img src="https://images.unsplash.com/photo-1545128485-c400e7702796?auto=format&fit=crop&w=800&q=80" alt="Sound 2000W"></div>
+                        <div class="pdf-card-title">Paket Sound 2.000 Watt</div>
+                        <div class="pdf-price-tag">Rp 2.000.000</div>
+                        <ul class="pdf-specs"><li><i class="fa-solid fa-circle-check"></i><span>2 Unit Sub + Triway Turbosound IP2000</span></li><li><i class="fa-solid fa-circle-check"></i><span>2 Unit Monitor Milan M15</span></li><li><i class="fa-solid fa-circle-check"></i><span>Mixer AD Live Pro + Mic Wireless</span></li></ul>
+                    </div>
+                    <div class="pdf-card">
+                        <div class="pdf-img" style="height:245px;"><img src="https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?auto=format&fit=crop&w=800&q=80" alt="Sound 3000W"></div>
+                        <div class="pdf-card-title">Paket Sound 3.000 Watt</div>
+                        <div class="pdf-price-tag">Rp 3.000.000</div>
+                        <ul class="pdf-specs"><li><i class="fa-solid fa-circle-check"></i><span>2 Unit Sub Turbosound IP2000</span></li><li><i class="fa-solid fa-circle-check"></i><span>3 Unit Monitor Milan M15</span></li><li><i class="fa-solid fa-circle-check"></i><span>Mixer Midas M32R + DL 32 Midas</span></li></ul>
+                    </div>
+                </div>
+            </div>
+            <div class="pdf-footer"><div><strong>WhatsApp:</strong> 0896-3862-6771</div><div><strong>Workshop:</strong> Perumahan Billabong Permai D3D, Bojonggede, Bogor</div></div>
+        </div>
+    </div>
+
+    <!-- HALAMAN 9: SOUND 5K -->
+    <div class="printable-page">
+        <div class="page-bg" style="background-image:url('https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?auto=format&fit=crop&w=1000&q=80');"></div>
+        <div class="page-inner">
+            <div>
+                <div class="pdf-hdr"><h2>Ika / Ira Sound System Production</h2></div>
+                <div class="pdf-sec-title">Sound System 5.000 Watt</div>
+                <div class="pdf-card" style="padding:22px;">
+                    <div class="pdf-img" style="height:370px;"><img src="https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?auto=format&fit=crop&w=1000&q=80" alt="Sound 5000W"></div>
+                    <div class="pdf-card-title" style="font-size:18px;">Kapasitas 5.000 Watt Professional</div>
+                    <div class="pdf-price-tag" style="font-size:15px;">Harga: Rp 5.000.000</div>
+                    <ul class="pdf-specs" style="margin-top:8px;">
+                        <li><i class="fa-solid fa-circle-check"></i><span>PA Speaker: 2 Sub Evo/IP2000 & 2 Yamaha DSR Active</span></li>
+                        <li><i class="fa-solid fa-circle-check"></i><span>Stage Monitor: 4 Turbosound Milan M15</span></li>
+                        <li><i class="fa-solid fa-circle-check"></i><span>Mixer: Midas M32R + DL 32 Digital Snake + Full Mic Kit</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="pdf-footer"><div><strong>WhatsApp:</strong> 0896-3862-6771</div><div><strong>Workshop:</strong> Perumahan Billabong Permai D3D, Bojonggede, Bogor</div></div>
+        </div>
+    </div>
+
+    <!-- HALAMAN 10: SOUND 10K -->
+    <div class="printable-page">
+        <div class="page-bg" style="background-image:url('https://images.unsplash.com/photo-1470225620780-dba8ba36b745?auto=format&fit=crop&w=1000&q=80');"></div>
+        <div class="page-inner">
+            <div>
+                <div class="pdf-hdr"><h2>Ika / Ira Sound System Production</h2></div>
+                <div class="pdf-sec-title">Sound System 10.000 Watt</div>
+                <div class="pdf-card" style="padding:22px;">
+                    <div class="pdf-img" style="height:370px;"><img src="https://images.unsplash.com/photo-1470225620780-dba8ba36b745?auto=format&fit=crop&w=1000&q=80" alt="Sound 10000W"></div>
+                    <div class="pdf-card-title" style="font-size:18px;">Kapasitas 10.000 Watt Concert Grade</div>
+                    <div class="pdf-price-tag" style="font-size:15px;">Harga: Rp 10.000.000</div>
+                    <ul class="pdf-specs" style="margin-top:8px;">
+                        <li><i class="fa-solid fa-circle-check"></i><span>PA: 4 Subwoofer TTS36218, 4 Line Array Vera 110, Low Pack 115</span></li>
+                        <li><i class="fa-solid fa-circle-check"></i><span>Monitor: 6 Milan M15 & Ear Monitor Behringer P1</span></li>
+                        <li><i class="fa-solid fa-circle-check"></i><span>Mixer: Midas M32R & M32 Live + DL 32 + Clearcom Hollyland</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="pdf-footer"><div><strong>WhatsApp:</strong> 0896-3862-6771</div><div><strong>Workshop:</strong> Perumahan Billabong Permai D3D, Bojonggede, Bogor</div></div>
+        </div>
+    </div>
+
+    <!-- HALAMAN 11: SOUND 15K -->
+    <div class="printable-page">
+        <div class="page-bg" style="background-image:url('https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?auto=format&fit=crop&w=1000&q=80');"></div>
+        <div class="page-inner">
+            <div>
+                <div class="pdf-hdr"><h2>Ika / Ira Sound System Production</h2></div>
+                <div class="pdf-sec-title">Sound System 15.000 Watt</div>
+                <div class="pdf-card" style="padding:22px;">
+                    <div class="pdf-img" style="height:370px;"><img src="https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?auto=format&fit=crop&w=1000&q=80" alt="Sound 15000W"></div>
+                    <div class="pdf-card-title" style="font-size:18px;">Kapasitas 15.000 Watt High Output</div>
+                    <div class="pdf-price-tag" style="font-size:15px;">Harga: Rp 15.000.000</div>
+                    <ul class="pdf-specs" style="margin-top:8px;">
+                        <li><i class="fa-solid fa-circle-check"></i><span>PA: 6 Subwoofer TTS36218, 4 Vera 110, Low Pack 115</span></li>
+                        <li><i class="fa-solid fa-circle-check"></i><span>Monitor: 6 Milan M15, 4 In-Ear Monitor P1</span></li>
+                        <li><i class="fa-solid fa-circle-check"></i><span>Mixer: Midas M32R, M32 Live, DL 32 Stagebox + Clearcom Hollyland</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="pdf-footer"><div><strong>WhatsApp:</strong> 0896-3862-6771</div><div><strong>Workshop:</strong> Perumahan Billabong Permai D3D, Bojonggede, Bogor</div></div>
+        </div>
+    </div>
+
+    <!-- HALAMAN 12: SOUND 20K -->
+    <div class="printable-page">
+        <div class="page-bg" style="background-image:url('https://images.unsplash.com/photo-1540039155733-5bb30b53aa14?auto=format&fit=crop&w=1000&q=80');"></div>
+        <div class="page-inner">
+            <div>
+                <div class="pdf-hdr"><h2>Ika / Ira Sound System Production</h2></div>
+                <div class="pdf-sec-title">Sound System 20.000 Watt Concert Level</div>
+                <div class="pdf-card" style="padding:22px;">
+                    <div class="pdf-img" style="height:370px;"><img src="https://images.unsplash.com/photo-1540039155733-5bb30b53aa14?auto=format&fit=crop&w=1000&q=80" alt="Sound 20000W"></div>
+                    <div class="pdf-card-title" style="font-size:18px;">Kapasitas 20.000 Watt Arena Concert</div>
+                    <div class="pdf-price-tag" style="font-size:15px;">Harga: Rp 20.000.000</div>
+                    <ul class="pdf-specs" style="margin-top:8px;">
+                        <li><i class="fa-solid fa-circle-check"></i><span>PA: 8 Subwoofer TTS36218, 8 Line Array RDW Tara123</span></li>
+                        <li><i class="fa-solid fa-circle-check"></i><span>Monitor: 8 Milan M15, 2 Side Fill Yamaha DSR 215</span></li>
+                        <li><i class="fa-solid fa-circle-check"></i><span>Mixer: Midas M32R & M32 Live + DL 32 + Clearcom Hollyland</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="pdf-footer"><div><strong>WhatsApp:</strong> 0896-3862-6771</div><div><strong>Workshop:</strong> Perumahan Billabong Permai D3D, Bojonggede, Bogor</div></div>
+        </div>
+    </div>
+
+    <!-- HALAMAN 13: SOUND 40K -->
+    <div class="printable-page">
+        <div class="page-bg" style="background-image:url('https://images.unsplash.com/photo-1470225620780-dba8ba36b745?auto=format&fit=crop&w=1000&q=80');"></div>
+        <div class="page-inner">
+            <div>
+                <div class="pdf-hdr"><h2>Ika / Ira Sound System Production</h2></div>
+                <div class="pdf-sec-title">Sound System 40.000 Watt Stadium Level</div>
+                <div class="pdf-card" style="padding:22px;">
+                    <div class="pdf-img" style="height:370px;"><img src="https://images.unsplash.com/photo-1470225620780-dba8ba36b745?auto=format&fit=crop&w=1000&q=80" alt="Sound 40000W"></div>
+                    <div class="pdf-card-title" style="font-size:18px;">Kapasitas 40.000 Watt Stadium Flagship</div>
+                    <div class="pdf-price-tag" style="font-size:15px;">Harga: Rp 40.000.000</div>
+                    <ul class="pdf-specs" style="margin-top:8px;">
+                        <li><i class="fa-solid fa-circle-check"></i><span>PA: 16 Subwoofer TTS36218, 16 Line Array RDW Tara123</span></li>
+                        <li><i class="fa-solid fa-circle-check"></i><span>Monitor: 10 Milan M15, 2 Side Fill Yamaha DSR215 Stadium Output</span></li>
+                        <li><i class="fa-solid fa-circle-check"></i><span>Dual Midas M32 Consoles, DL 32 Stagebox, Full Mic Rigging Kit</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="pdf-footer"><div><strong>WhatsApp:</strong> 0896-3862-6771</div><div><strong>Workshop:</strong> Perumahan Billabong Permai D3D, Bojonggede, Bogor</div></div>
+        </div>
+    </div>
+
+    <!-- HALAMAN 14: PENUTUP -->
+    <div class="printable-page">
+        <div class="page-bg" style="background-image:url('https://images.unsplash.com/photo-1470225620780-dba8ba36b745?auto=format&fit=crop&w=1200&q=80');opacity:0.35;filter:none;"></div>
+        <div class="page-inner" style="text-align:center;justify-content:center;">
+            <div style="margin-bottom:28px;">
+                <div style="font-family:'Montserrat',sans-serif;font-size:36px;font-weight:900;letter-spacing:2px;">IKA / IRA</div>
+                <div style="font-size:18px;font-weight:800;color:var(--accent-gold);text-transform:uppercase;letter-spacing:4px;">Sound System Production</div>
+            </div>
+            <div style="font-family:'Montserrat',sans-serif;font-size:20px;color:var(--accent-gold);margin-bottom:28px;font-weight:800;text-transform:uppercase;">Terima Kasih Atas Kepercayaan Anda</div>
+            <div style="margin:0 auto 32px;max-width:520px;font-size:13px;color:#e2e8f0;line-height:1.8;background:rgba(9,11,16,0.88);border:1px solid rgba(241,196,15,0.35);border-radius:14px;padding:22px;backdrop-filter:blur(12px);">
+                <strong style="color:var(--accent-gold);font-size:14px;">Workshop & Kantor:</strong><br>
+                Perumahan Billabong Permai D3D, Jl. Pangrango VII No. 8, Bojonggede, Bogor, Jawa Barat
+            </div>
+            <div>
+                <div style="font-size:11px;color:#94a3b8;text-transform:uppercase;letter-spacing:2px;font-weight:700;">Reservasi WhatsApp</div>
+                <div style="font-family:'Montserrat',sans-serif;font-size:34px;font-weight:900;color:var(--accent-gold);margin-top:5px;">0896-3862-6771</div>
+            </div>
+        </div>
+    </div>
+
+</div>
+</div>
+
+<script>
+// ===== DATA KATALOG =====
+const WA = '6289638626771';
+const items = [
+    { id:'sound-2k', cat:'sound', name:'Sound System 2.000 Watt', price:'Rp 2.000.000', img:'https://images.unsplash.com/photo-1545128485-c400e7702796?auto=format&fit=crop&w=600&q=80', specs:['2 Unit Sub + Triway Turbosound IP2000','2 Unit Monitor Turbosound Milan M15','Mixer AD Live Pro Console','Mic Wireless Hardwell & Shure SM58','Include Operator & Cable Management'] },
+    { id:'sound-3k', cat:'sound', name:'Sound System 3.000 Watt', price:'Rp 3.000.000', img:'https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?auto=format&fit=crop&w=600&q=80', specs:['2 Unit Sub Turbosound IP2000','3 Unit Monitor Turbosound Milan M15','Mixer Midas M32R + DL 32 Midas','Mic Wireless Hardwell & Shure SM58'] },
+    { id:'sound-5k', cat:'sound', name:'Sound System 5.000 Watt', price:'Rp 5.000.000', img:'https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?auto=format&fit=crop&w=600&q=80', specs:['PA: 2 Sub Evo/IP2000 & 2 Yamaha DSR Active','Monitor: 4 Unit Turbosound Milan M15','Mixer: Midas M32R + DL 32 Digital Snake','Mic Drum Kit AKG & DI Box Lengkap'] },
+    { id:'sound-10k', cat:'sound', name:'Sound System 10.000 Watt', price:'Rp 10.000.000', img:'https://images.unsplash.com/photo-1470225620780-dba8ba36b745?auto=format&fit=crop&w=600&q=80', specs:['PA: 4 Subwoofer TTS36218, 4 Line Array Vera 110','Monitor: 6 Milan M15 & Ear Monitor Behringer P1','Mixer: Midas M32R & M32 Live + DL 32','Intercom: Clearcom Hollyland Wireless'] },
+    { id:'sound-15k', cat:'sound', name:'Sound System 15.000 Watt', price:'Rp 15.000.000', img:'https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?auto=format&fit=crop&w=600&q=80', specs:['PA: 6 Subwoofer TTS36218, 4 Vera 110, Low Pack 115','Monitor: 6 Milan M15, 4 In-Ear Monitor P1','Mixer: Midas M32R, M32 Live, DL 32 Stagebox','Clearcom Hollyland Intercom System'] },
+    { id:'sound-20k', cat:'sound', name:'Sound System 20.000 Watt', price:'Rp 20.000.000', img:'https://images.unsplash.com/photo-1540039155733-5bb30b53aa14?auto=format&fit=crop&w=600&q=80', specs:['PA: 8 Subwoofer TTS36218, 8 Line Array RDW Tara123','Monitor: 8 Milan M15, 2 Side Fill Yamaha DSR 215','Mixer: Midas M32R & M32 Live + DL 32 Stagebox','Clearcom Hollyland Wireless Crew Intercom'] },
+    { id:'sound-40k', cat:'sound', name:'Sound System 40.000 Watt Stadium', price:'Rp 40.000.000', img:'https://images.unsplash.com/photo-1470225620780-dba8ba36b745?auto=format&fit=crop&w=600&q=80', specs:['PA: 16 Subwoofer TTS36218, 16 Line Array RDW Tara123','Monitor: 10 Milan M15, 2 Side Fill Yamaha DSR215','Dual Midas M32 Consoles, DL 32, Full Mic Rigging','Super Stadium Class Power & Clarity'] },
+    { id:'panggung-rigging', cat:'panggung', name:'Panggung Rigging Aluminium', price:'Rp 200.000 / meter', img:'https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?auto=format&fit=crop&w=600&q=80', specs:['Konstruksi Truss Aluminium Heavy Duty','Atap Canvas Terpal Anti-Air & Karpet Stage','Ketinggian Panggung 50cm – 1.5m Sesuai Request'] },
+    { id:'panggung-custom', cat:'panggung', name:'Panggung Custom / Level Event', price:'Rp 200.000 – 500.000 / meter', img:'https://images.unsplash.com/photo-1540039155733-5bb30b53aa14?auto=format&fit=crop&w=600&q=80', specs:['Formasi Custom: T-Shape, Catwalk, Circular','Finishing Karpet Premium / Melamin Glossy','Ideal untuk Fashion Show & Corporate Event'] },
+    { id:'backdrop', cat:'backdrop', name:'Backdrop Standar & Custom 3D', price:'Rp 250.000 / meter', img:'https://images.unsplash.com/photo-1511578314322-379afb476865?auto=format&fit=crop&w=600&q=80', specs:['Rangka Kayu Solid & Flexi Korea High Resolution','Opsi Pop-Up 3D + Aksen LED Strip Lighting','Include Pemasangan & Bongkaran Jabodetabek'] },
+    { id:'videotron', cat:'videotron', name:'Videotron LED P3.1 HD', price:'Rp 600.000 / m²', img:'https://images.unsplash.com/photo-1540575467063-178a50c2df87?auto=format&fit=crop&w=600&q=80', specs:['Pixel Pitch P3.1 Ultra Sharp Resolution','Level Konstruksi Panggung 50cm – 100cm','Include Laptop Control & Operator Standby'] },
+    { id:'lighting-a', cat:'lighting', name:'Paket Stage Lighting A', price:'Rp 3.500.000', img:'https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?auto=format&fit=crop&w=600&q=80', specs:['8 Unit Parled TRF + 4 Unit Beam Clara S','5 Unit Strobo Flash + 2 Fresnel + Stand','Mixer Lighting Kingkong Console'] },
+    { id:'lighting-b', cat:'lighting', name:'Paket Stage Lighting B', price:'Rp 2.500.000', img:'https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?auto=format&fit=crop&w=600&q=80', specs:['8 Unit Parled TRF + 2 Unit Beam Clara S','4 Unit Strobo Flash + 2 Fresnel + Stand','Mixer Lighting Kingkong E Console'] },
+    { id:'tenda-3x3', cat:'tenda', name:'Tenda Sarnafil 3×3 Meter', price:'Rp 350.000 / unit', img:'https://images.unsplash.com/photo-1530103862676-de8c9debad1d?auto=format&fit=crop&w=600&q=80', specs:['Terpal Kerucut Sarnafil Putih Clean','Rangka Aluminium Kokoh + Dinding Samping','Cocok untuk Booth Bazar & VIP Area'] },
+    { id:'tenda-5x5', cat:'tenda', name:'Tenda Sarnafil 5×5 Meter', price:'Rp 650.000 / unit', img:'https://images.unsplash.com/photo-1530103862676-de8c9debad1d?auto=format&fit=crop&w=600&q=80', specs:['Ukuran Luas 5m × 5m Kerucut Sarnafil','Konstruksi Aluminium Rapi & Kokoh','Include Tirai / Dinding Samping'] },
+    { id:'tenda-vip', cat:'tenda', name:'Tenda VIP & Kursi Futura', price:'Rp 50.000 – 85.000 / m² | Kursi Rp 10.000 – 15.000', img:'https://images.unsplash.com/photo-1519167758481-83f550bb49b3?auto=format&fit=crop&w=600&q=80', specs:['Tenda Dekorasi VIP Serut Elegant','Kursi Futura Polos : Rp 10.000 / unit','Kursi + Cover Press Fit & Pita : Rp 15.000'] },
+    { id:'gitar', cat:'musik', name:'Guitar Yamaha Pacifica', price:'Rp 300.000', img:'https://images.unsplash.com/photo-1564186763535-ebb21ef5277f?auto=format&fit=crop&w=600&q=80', specs:['Gitar Elektrik Pacifica Original','Include Softcase & Cable'] },
+    { id:'bass', cat:'musik', name:'Bass Yamaha BB234', price:'Rp 300.000', img:'https://images.unsplash.com/photo-1564186763535-ebb21ef5277f?auto=format&fit=crop&w=600&q=80', specs:['4-String Bass High Clarity Tone','Include Cable & Strap'] },
+    { id:'keyboard', cat:'musik', name:'Keyboard / Stage Piano', price:'Rp 400.000 – Rp 700.000', img:'https://images.unsplash.com/photo-1462965326201-d02e4f455804?auto=format&fit=crop&w=600&q=80', specs:['Rolland BK3 / Juno : Rp 400.000','Yamaha PSR290 / Korg PA1000 : Rp 400.000','Stage Piano Roland RD 700 : Rp 700.000','Include Stand X & Pedal Sustainer'] },
+    { id:'drum', cat:'musik', name:'Drum Set Yamaha DTX / Tama Superstar', price:'Rp 600.000 – Rp 700.000', img:'https://images.unsplash.com/photo-1519892300165-cb5542fb47c7?auto=format&fit=crop&w=600&q=80', specs:['Yamaha DTX6K3X Digital Drum : Rp 600.000','Tama Superstar Classic Acoustic : Rp 700.000','Optional: Mic Drum Set AKG (Rp 300.000)'] },
+];
+
+const catNames = { sound:'Sound System', panggung:'Aneka Panggung', backdrop:'Backdrop Custom', lighting:'Paket Lighting', videotron:'Videotron HD', tenda:'Tenda & Kursi', musik:'Alat Musik' };
+
+let currentCat = 'all';
+
+// ===== RENDER =====
+function render(data) {
+    const grid = document.getElementById('catalog-grid');
+    if (!data.length) {
+        grid.innerHTML = `<div class="empty-state"><i class="fa-solid fa-box-open"></i><h3>Item Tidak Ditemukan</h3><p>Coba kata kunci pencarian lain.</p></div>`;
+        return;
+    }
+    grid.innerHTML = data.map(item => `
+        <div class="catalog-card">
+            <div class="card-thumb">
+                <img src="${item.img}" alt="${item.name}" loading="lazy">
+                <span class="cat-badge">${catNames[item.cat] || item.cat}</span>
+            </div>
+            <div class="card-body">
+                <h3 class="card-title">${item.name}</h3>
+                <div class="card-price"><i class="fa-solid fa-tag"></i>${item.price}</div>
+                <ul class="card-specs">${item.specs.map(s=>`<li><i class="fa-solid fa-circle-check"></i><span>${s}</span></li>`).join('')}</ul>
+                <div class="card-actions">
+                    <a href="https://wa.me/${WA}?text=${encodeURIComponent('Halo Ika Ira Production, saya ingin pesan/sewa:\n\n' + item.name + '\nHarga: ' + item.price + '\n\nMohon info ketersediaan dan detail penawaran. Terima kasih!')}" target="_blank" class="btn btn-wa">
+                        <i class="fa-brands fa-whatsapp"></i> Pesan via WA
+                    </a>
+                    <a href="https://wa.me/${WA}?text=${encodeURIComponent('Halo, saya ingin tanya info ' + item.name)}" target="_blank" class="btn btn-outline">
+                        <i class="fa-solid fa-circle-info"></i> Info
                     </a>
                 </div>
             </div>
         </div>
+    `).join('');
+}
 
-    </div>
+function setCategory(cat, el) {
+    currentCat = cat;
+    document.querySelectorAll('.pill').forEach(p => p.classList.remove('active'));
+    el.classList.add('active');
+    filterItems();
+}
 
+function filterItems() {
+    const q = document.getElementById('search-input').value.toLowerCase();
+    const filtered = items.filter(item => {
+        const matchCat = currentCat === 'all' || item.cat === currentCat;
+        const matchSearch = item.name.toLowerCase().includes(q) || item.specs.some(s => s.toLowerCase().includes(q));
+        return matchCat && matchSearch;
+    });
+    render(filtered);
+}
+
+// ===== MODE SWITCH =====
+function setMode(mode) {
+    const webView = document.getElementById('web-view');
+    const pdfView = document.getElementById('pdf-view');
+    const btnWeb = document.getElementById('btn-web');
+    const btnPdf = document.getElementById('btn-pdf');
+    if (mode === 'pdf') {
+        webView.style.display = 'none';
+        pdfView.style.display = 'block';
+        btnWeb.classList.remove('active');
+        btnPdf.classList.add('active');
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    } else {
+        webView.style.display = 'block';
+        pdfView.style.display = 'none';
+        btnPdf.classList.remove('active');
+        btnWeb.classList.add('active');
+    }
+}
+
+// ===== TOAST =====
+function showToast(msg) {
+    const t = document.getElementById('toast');
+    document.getElementById('toast-msg').innerText = msg;
+    t.classList.add('show');
+    setTimeout(() => t.classList.remove('show'), 3000);
+}
+
+// ===== INIT =====
+document.addEventListener('DOMContentLoaded', () => render(items));
+</script>
 </body>
 </html>
